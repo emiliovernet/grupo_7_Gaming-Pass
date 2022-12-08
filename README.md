@@ -13,14 +13,20 @@ Apuntamos a un público joven inmerso en el mundo del gaming, dentro del area de
 
 ## Referentes del mercado
 
-Habiendo hecho un análisis de distintas plataformas e-commerce tomamos como referencia los siguientes sitios:
+Habiendo hecho un análisis de distintas plataformas e-commerce, tomamos como referencia los siguientes sitios:
 
 - Por su estética
   - [Venex](https://www.venex.com.ar/)
   - [Maximus](https://www.maximus.com.ar/)
+  
+En este caso, destacamos la seguridad y confianza que ambos sitios transmiten, tanto a traves de los colores empleados, como a traves de su composicion general. Poniendonos en el lugar de clientes, como grupo coincidimos que nos sentiriamos comodos y seguros realizando compras a traves de sitios como los mencionados.
+  
 - Por su organización
   - [Tienda Red Dragon](https://www.tiendaredragon.ar/)
   - [Eclypse](https://www.eclypse.com.ar/)
+  
+Respecto a estos sitios, nos convencio la forma practica y dinamica que aplicaron estos e-commerces para categorizar sus productos.
+
 - De acá vamos a tomar la sección "Detalle de producto"
   - [Compra Gamer](https://compragamer.com/)
 
