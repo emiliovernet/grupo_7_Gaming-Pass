@@ -2,15 +2,19 @@
 
 Gaming pass es una plataforma e-commerce que ofrece un catálogo de productos tecnológicos como notebooks, componentes de pc y periféricos. 
 
-Apuntamos a un público joven inmerso en el mundo del gaming, dentro del area de CABA y Gran Buenos Aires.   
+Apuntamos a un público joven inmerso en el mundo del gaming, dentro del area de CABA y Gran Buenos Aires. De esta forma, ajustaremos nuestra oferta a el publico dentro del area, ofreciendo envios gratis en determinados productos y dependiendo de la cantidad de productos a comprar. Tambien, asi como nos enfocaremos en transmitirle seguridad al cliente a la hora de comprar, nos aseguraremos de darle al cliente la mayor infomacion posible del producto a elegir, y ademas, la garantia del producto en caso de que el mismo presente algun fallo y/o anomalia.
 
 ## Integrantes del grupo
 
-- Virginia Schmied
-- Hernán Pereyra
-- Ezequiel Gomez
-- Emilio Vernet
-- Federico Agustin Granda Murua
+- Virginia Schmied: Estudiante en Universidad Nacional Gral. Sarmiento, Licenciatura en sistemas. Tengo 21 años, y vivo en San Miguel, Buenos Aires.
+
+- Hernán Pereyra:
+
+- Ezequiel Gomez:
+
+- Emilio Vernet:
+
+- Federico Agustin Granda Murua:
 
 ## Referentes del mercado
 
@@ -28,12 +32,14 @@ En este caso, destacamos la seguridad y confianza que ambos sitios transmiten, t
   
 Respecto a estos sitios, nos convencio la forma practica y dinamica que aplicaron estos e-commerces para categorizar sus productos.
 
-- De acá vamos a tomar la sección "Detalle de producto"
+- Por las caracteristicas del producto
   - [Compra Gamer](https://compragamer.com/)
+  
+De dicho sitio, vamos a tomar la sección "Detalle de producto", dado que nos agrado la manera en la que categorizan cada detalle y caracteristica del producto, de forma legible para el usuario.
 
 
 ## Diseño
 
-Nuestra oferta se enfoca en la seriedad y responsabilidad para la tranquilidad del cliente, para ello el sitio utilizara una paleta de colores basada en la psicología.
+Nuestra plataforma se enfocara en la seriedad y responsabilidad para la tranquilidad del cliente a la hora de realizar su compra. Para ello, el sitio utilizara una paleta de colores basada en la psicología(psicologia del color) y una tipografia seria y tradicional.
 
 [Psicología del color](https://www.psicologiadelcolor.es/johann-wolfgang-von-goethe-y-la-teoria-del-color/seriedad/)
