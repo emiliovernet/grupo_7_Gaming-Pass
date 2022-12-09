@@ -10,6 +10,7 @@ Apuntamos a un público joven inmerso en el mundo del gaming, dentro del area de
 - Hernán Pereyra
 - Ezequiel Gomez
 - Emilio Vernet
+- Federico Agustin Granda Murua
 
 ## Referentes del mercado
 
