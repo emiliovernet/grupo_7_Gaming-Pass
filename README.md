@@ -8,7 +8,7 @@ Apuntamos a un público joven inmerso en el mundo del gaming, dentro del area de
 
 - Virginia Schmied: Estudiante en Universidad Nacional Gral. Sarmiento, Licenciatura en sistemas. Tengo 21 años, y vivo en San Miguel, Buenos Aires.
 
-- Hernán Pereyra:
+- Hernán Pereyra: Estudiante en Universidad Tecnológica Nacional, Tecnicatura Superior en Programación. Tengo 26 años, vivo en San Miguel y actualmente trabajo en una logística.
 
 - Ezequiel Gomez:
 
@@ -40,6 +40,6 @@ De dicho sitio, vamos a tomar la sección "Detalle de producto", dado que nos ag
 
 ## Diseño
 
-Nuestra plataforma se enfocara en la seriedad y responsabilidad para la tranquilidad del cliente a la hora de realizar su compra. Para ello, el sitio utilizara una paleta de colores basada en la psicología(psicologia del color) y una tipografia seria y tradicional.
+Nuestra plataforma se enfocara en la seriedad y responsabilidad para la tranquilidad del cliente a la hora de realizar su compra. Para ello, el sitio utilizara una paleta de colores basada en la psicología (psicologia del color) y una tipografia seria y tradicional.
 
 [Psicología del color](https://www.psicologiadelcolor.es/johann-wolfgang-von-goethe-y-la-teoria-del-color/seriedad/)
