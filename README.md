@@ -6,7 +6,7 @@ Apuntamos a un público joven inmerso en el mundo del gaming, dentro del area de
 
 ## Integrantes del grupo
 
-- Virginia Schmied: Estudiante en Universidad Nacional Gral. Sarmiento, Licenciatura en sistemas. Tengo 21 años, y vivo en San Miguel, Buenos Aires.
+- Virginia Schmied: Estudiante en Universidad Nacional Gral. Sarmiento, Licenciatura en sistemas. Tengo 21 años, y vivo en San Miguel, Buenos Aires. Actualmente trabajo en la oficina de Habilitaciones Comerciales de mi partido.
 
 - Hernán Pereyra: Estudiante en Universidad Tecnológica Nacional, Tecnicatura Superior en Programación. Tengo 26 años, vivo en San Miguel y actualmente trabajo en una logística.
 
