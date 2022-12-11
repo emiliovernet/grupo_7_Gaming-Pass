@@ -12,7 +12,7 @@ Apuntamos a un público joven inmerso en el mundo del gaming, dentro del area de
 
 - Ezequiel Gomez:
 
-- Emilio Vernet:
+- Emilio Vernet: Tengo 25 años y vivo en Bella Vista, San Miguel. Soy consultor psicológico y futuro desarrollador web full stack.
 
 - Federico Agustin Granda Murua:
 
