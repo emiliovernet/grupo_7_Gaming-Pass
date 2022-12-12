@@ -10,7 +10,7 @@ Apuntamos a un público joven inmerso en el mundo del gaming, dentro del area de
 
 - Hernán Pereyra: Estudiante en Universidad Tecnológica Nacional, Tecnicatura Superior en Programación. Tengo 26 años, vivo en San Miguel y actualmente trabajo en una logística.
 
-- Ezequiel Gomez:
+- Ezequiel Gomez: actualmente me desempeño como analista contable, pero estudio la tecnicatura en Programación. tengo 28 años y soy de San Miguel
 
 - Emilio Vernet: Tengo 25 años y vivo en Bella Vista, San Miguel. Soy consultor psicológico y futuro desarrollador web full stack.
 
