@@ -1,0 +1,272 @@
+* {
+  margin: 0px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #E5E7E9;
+  position: relative;
+}
+
+header {
+  background-image: url("/images/IMG-BACKGROUND.JPG");
+  box-sizing: border-box;
+  width: 100%;
+}
+
+header div.logo {
+  padding: 2px;
+  width: 2%;
+}
+
+
+
+header div.top-header p {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.top-header .log .form .input .nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:center;
+}
+
+header .form {
+  width: 30%;
+}
+
+header .top-header .form .input {
+  background-color: rgb(235, 227, 227);
+  border: 1px solid #000;
+  color: rgb(66, 65, 66);
+  padding: 2px;
+  width: 150%;
+  text-align: left;
+}
+
+header .top-header .user .userlog {
+  border: 1px solid #2f0e4e;
+  background-color: #70368a;
+  width: 50%;
+  color: rgb(255, 247, 247);
+  padding: 5px;
+  border: 10px;
+}
+
+header .top-header .chart .chartlog {
+  border: 1px solid #2f0e4e;
+  background-color: #70368a;
+  width: 50%;
+  color: rgb(255, 247, 247);
+  padding: 5px;
+  border: 10px;
+}
+
+section.banner img {
+  width: 100%;
+}
+
+article div.main-article {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #000000;
+  padding: 15px;
+}
+
+.price {
+  width: 30%;
+  font-size: 20px;
+}
+
+.discount,
+.description {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+h3,
+.description {
+  color: rgb(95, 94, 94);
+}
+
+.description {
+  display: none;
+  margin-top: 20px;
+}
+
+section article {
+  background-color: rgb(255, 255, 255);
+  margin: 10px 0px;
+}
+
+section article img {
+  width: 100%;
+}
+
+.image {
+  width: 10%;
+}
+
+section article .discount {
+  width: 70%;
+  color: #A569BD;
+}
+
+section article i {
+  width: 70%;
+  color: #A569BD;
+}
+
+.truck-icon {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #A569BD;
+  background-color: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+section h3 {
+  margin: 20px 0px;
+}
+
+article {
+  border: rgb(73, 33, 119)
+}
+
+.products {
+  background-color: #CACFD2;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.beneficies {
+  background-image: url("/images/IMG-BACKGROUND.JPG");
+  width: 100%;
+}
+
+.fa-truck-moving, .fa-credit-card{
+  display: block;
+  padding: 5px;
+  width: 70px;
+  height: 40px;
+  align-self: center;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.items h4 {
+  font-size: 21px;
+}
+
+.item1, .item2 {
+  box-sizing: border-box;
+  height: 130px;
+  text-align: center;
+  align-self: center;
+}
+
+
+@media (min-width: 158px) {
+  section article .description {
+    display: block;
+  }
+
+  section article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  section .products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 16px;
+    justify-content: center;
+  }
+
+  section .products article {
+    width: 48%;
+  }
+}
+
+
+
+
+@media (min-width: 361px) {
+  section article .description {
+    display: block;
+  }
+
+  section article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  section .products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 16px;
+    justify-content: center;
+  }
+
+  section .products article {
+    width: 48%;
+  }
+}
+
+@media (min-width: 769px) {
+  section .products article {
+    width: 24%;
+  }
+
+  header div.logo {
+    width: 30%;
+  }
+
+  header .form {
+    width: 30%;
+  }
+
+  header div.top-header p {
+    width: 40%;
+    margin-top: 0;
+  }
+
+  header nav {
+    display: flex;
+  }
+
+  header nav ul {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  header nav ul:nth-child(1) {
+    padding-left: 64px;
+  }
+
+  header nav ul:nth-child(2) {
+    justify-content: flex-end;
+    padding-right: 64px;
+  }
+}
