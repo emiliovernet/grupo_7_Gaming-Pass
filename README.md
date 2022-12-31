@@ -1,5 +1,7 @@
 # GAMING PASS
 
+Enlace tablero Trello: https://trello.com/b/TLpzcxt8/gaming-pass
+
 Gaming pass es una plataforma e-commerce que ofrece un catálogo de productos tecnológicos como notebooks, componentes de pc y periféricos. 
 
 Apuntamos a un público joven inmerso en el mundo del gaming, dentro del area de CABA y Gran Buenos Aires. De esta forma, ajustaremos nuestra oferta a el publico dentro del area, ofreciendo envios gratis en determinados productos y dependiendo de la cantidad de productos a comprar. Tambien, asi como nos enfocaremos en transmitirle seguridad al cliente a la hora de comprar, nos aseguraremos de darle al cliente la mayor infomacion posible del producto a elegir, y ademas, la garantia del producto en caso de que el mismo presente algun fallo y/o anomalia.
