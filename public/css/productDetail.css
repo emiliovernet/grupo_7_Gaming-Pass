@@ -1,0 +1,129 @@
+/* GENERALES */
+
+* {
+    margin: 0px;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #E5E7E9;
+    position: relative;
+}
+
+/* HEADER */
+
+header {
+    background-image: url("/images/IMG-BACKGROUND.JPG");
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+header ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+    display: flex;
+}
+
+header a {
+    text-decoration: none;
+    color: #A569BD;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+.header-top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form {
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.form .input {
+    background-color: #fff;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.nav-header {
+    width: 31%;
+}
+
+.nav-header ul {
+    display: flex;
+    text-align: center;
+}
+
+.nav-header li {
+    margin: auto;
+}
+
+.nav-header a {
+    font-size: 30px;
+
+}
+
+.header-bottom-bar ul {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+/* ESTILOS MAIN */
+
+main {
+    display: flex;
+    flex-flow: row;
+    background-color: white;
+    justify-content: space-around;
+}
+
+main p {
+    color: rgb(95, 94, 94);
+}
+
+.imagen-producto {
+    width: 50vw;
+    max-width: 400px;
+}
+
+.envio i {
+    color: #A569BD;
+    font-weight: bold;
+}
+
+.caracteristicas {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+}
+
+/* ESTILOS FOOTER */
+
+footer {
+    background-image: url("/images/IMG-BACKGROUND.JPG");
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.telefono,
+.mail {
+    display: flex;
+}
