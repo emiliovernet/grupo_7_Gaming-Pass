@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    background-color: #cfcfcf;
+    font-family: 'Inter', sans-serif;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.logo-container{
+    height: 40%;
+    margin: auto;
+}
+
+.logo{
+    height: 100%;
+    min-height: 350px;
+    max-width: 350px;;
+}
+
+.teclado-container{
+    height: 60%;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    width: 100%;
+}
+
+.teclado{
+   height: 100%;
+   width: 125%
+
+}
+
+.visual{
+    display: none;
+    flex-direction: column;
+    background-color: #464646;
+    width: 32%;
+    height: 100vh;
+    margin: 0;
+}
+
+.separacion{
+    width: 68vw;
+}
+
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin:auto;
+    padding-top: 120px;
+}
+
+.form{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+
+.form__input{
+    box-sizing: border-box;
+    margin-top: 10px;
+    width: 100%;
+    padding: 18px;
+   
+}
+
+.form__input:focus{
+
+    outline: solid 0.1px #7e41b3 ;
+}
+.botones-container{
+    display: flex;
+    justify-content: center;
+}
+.botones__separacion{
+    width: 100%;
+}
+
+.boton{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 22px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    background-color: #7e41b3;
+    color: #fff;
+    border-radius: 7px;
+    font-size: 17px;
+}
+
+.boton:hover{
+    cursor: pointer;
+}
+
+.olvide{
+    text-align: left;
+}
+p{
+    width: 170px;
+}
+
+p:hover{
+    cursor:pointer;
+    text-decoration: underline;
+
+}
+
+
+@media(max-width: 990px){
+    .visual{
+        display: none;
+    }
+    .separacion{
+        width: 100%;
+        min-width: 500px;
+    }
+    .form-container{
+        margin:auto;
+        padding-top: 120px;
+    }
+    
+}
+
+@media(min-width: 991px){
+    .visual{
+        display: flex;
+    }
+}

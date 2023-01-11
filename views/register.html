@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/login.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Pacifico&family=Roboto&family=Varela+Round&family=Yeseva+One&display=swap" rel="stylesheet">
+    
+    <title>Register</title>
+</head>
+<body>
+    <div class="flex-container" >
+
+        <div class="visual">
+            <div class="logo-container">
+                <img class="logo" src="images/Logo.png">
+            </div>
+            <div class="teclado-container">
+                <img class="teclado" src="images/Teclado.png">
+            </div>
+        </div>
+        <div class="separacion">
+            <div class="form-container">
+                <div class="botones-container">
+                    <div class="botones__separacion">
+                        <a href="/login"><button class="boton" type="submit" >Ingresá</button></a> 
+                    </div>
+                    <div class="botones__separacion">
+                        <a href="/register"><button class="boton" type="submit" >Registrate</button></a> 
+                    </div>
+                   </div> 
+            
+                <form class="form" action="/login" method="POST">
+                    <div class="form_seccion">
+                        <input class="form__input" type="text" name="nombre" id="txfNombre" placeholder="Nombre">
+                    </div>
+                    <div class="form_seccion">
+                        <input class="form__input" type="email" name="email" id="txfEmail" placeholder="Email">
+                    </div>
+                    <div class="form_seccion">
+                        <input class="form__input" type="password" name="password" id="txfPassword" placeholder="Contraseña">
+                    </div>
+                    <div class="form_seccion">
+                        <input class="form__input" type="password" name="Reppassword" id="txfRepPassword" placeholder="Repetir Contraseña">
+                    </div>
+        
+                </form>
+          
+                <div class="enviar" >
+                    <a href="/home"><button class="boton" type="submit">Registrarme</button></a>
+                </div>
+        
+            
+            </div>
+        </div>
+       
+
+  </div>
+</body>
+</html>
