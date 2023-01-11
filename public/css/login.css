@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-color: #cfcfcf;
+    background-image: url("/images/IMG-BACKGROUND.JPG");
     font-family: 'Inter', sans-serif;
 }
 
@@ -16,7 +16,7 @@ body{
 .logo{
     height: 100%;
     min-height: 350px;
-    max-width: 350px;;
+    max-width: 350px;
 }
 
 .teclado-container{
@@ -29,8 +29,13 @@ body{
 
 .teclado{
    height: 100%;
-   width: 125%
+   width: 125%;
+   transition: all 650ms;
+}
 
+.teclado:hover{
+-webkit-transform: scale(1.05);
+transform: scale(1.05);
 }
 
 .visual{
@@ -60,13 +65,26 @@ body{
     margin-bottom: 15px;
 }
 
+.form_seccion{
+    display: flex;
+    justify-content: center;
+}
 
 .form__input{
     box-sizing: border-box;
     margin-top: 10px;
-    width: 100%;
-    padding: 18px;
-   
+    width: 95%;
+    padding: 22px;
+    border: 1px solid #b1afaf;
+    border-radius: 6px;
+    position: relative;
+    right: 1%;
+    transition:all 650ms;
+}
+
+.form__input:hover{
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .form__input:focus{
@@ -83,25 +101,35 @@ body{
 
 .boton{
     box-sizing: border-box;
-    width: 100%;
+    width: 95%;
     padding: 22px;
     font-family: 'Inter', sans-serif;
     font-weight: bold;
     background-color: #7e41b3;
+    border: 2px solid #5a2c83;
     color: #fff;
     border-radius: 7px;
     font-size: 17px;
+    transition: all 650ms;
 }
 
 .boton:hover{
     cursor: pointer;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.enviar .boton {
+    width: 98%;
 }
 
 .olvide{
     text-align: left;
 }
+
 p{
     width: 170px;
+    transition: all 650ms;
 }
 
 p:hover{
