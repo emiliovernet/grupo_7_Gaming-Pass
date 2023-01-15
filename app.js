@@ -1,29 +1,12 @@
 const express = require('express');
-const path = require('path');
 
 const app = express();
 
+const mainRouter = require('./routers/main.js');
+
 app.use(express.static('public'));
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/home.html'));
-});
-
-app.get('/productDetail', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/productDetail.html'));
-});
-
-app.get('/productCart', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/productCart.html'));
-});
-
-app.get('/register', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/register.html'));
-});
-
-app.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/login.html'));
-});
+app.use('/', mainRouter)
 
 app.listen(3030, () => {
     console.log('Servidor iniciado en http://localhost:3030');
