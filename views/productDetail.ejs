@@ -9,29 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
     <link rel="stylesheet" href="/css/productDetail.css" />
 </head>
+
 <body>
-    <header>
-        <div class="header-top-bar">
-            <a href="/"><img src="/images/IMG-LOGO.JPG" alt="Logo de GAMING PASS" class="logo" /></a>
-            <div class="form">
-                <div class="input"><i class="fa fa-search"></i>Busqueda</div>
-            </div>
-            <div class="nav-header">
-                <ul>
-                    <li><a href="/login"><i class="fa fa-user"></i></a></li>
-                    <li><a href="/productCart"><i class="fa fa-shopping-cart"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <nav class="header-bottom-bar">
-            <ul>
-                <li><a href="#">Asus</a></li>
-                <li><a href="#">Acer</a></li>
-                <li><a href="#">Dell</a></li>
-                <li><a href="#">Samsung</a></li>
-            </ul>
-        </nav>
-    </header>
+
+<%- include('partials/header') %>
+
     <main>
         <section class="producto">
                 <img class="imagen-producto" src="/images/IMG-NOTEBOOK1.JPG" alt="Notebook ASUS ZenBook DUO TOUCH UX482 14">
@@ -55,17 +37,5 @@
             </article>
         </section>
     </main>
-    <footer>
-        <img src="\images\IMG-LOGO.JPG" alt="" class="logo" />
-        <div class="contacto">
-            <p>CONTACTANOS</p>
-            <div class="telefono">
-                <i class="fa fa-phone"></i><p>0810 888 6532</p>
-            </div>
-            <div class="mail">
-                <i class="fa fa-envelope"></i><p>contacto@gamingpass.com</p>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+    
+<%- include('partials/footer') %>
