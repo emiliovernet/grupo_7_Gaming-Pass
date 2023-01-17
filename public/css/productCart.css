@@ -1,0 +1,98 @@
+/* GENERALES */
+
+* {
+    margin: 5px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #E5E7E9;
+    position: relative;
+    /* width: 100%; */
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("/images/IMG-BACKGROUND8.JPG");
+  }
+
+  header .nav-bar {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form {
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.form .input {
+    background-color: #fff;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.main-purchase {
+  display: block;
+  background-color: white;
+  border: solid 1px black;
+  margin: 15px;
+  padding: 0 100px;
+}
+
+.main-purchase-top-content {
+  display: flex;
+  justify-content:space-around;
+  border: solid 1px black;
+  margin: 15px 0px 0px auto;
+}
+
+.main-purchase-rest-content {
+  display: flex;
+}
+
+.main-purchase-bottom-content-1 {
+  display: flex;
+  width: 55%;
+  justify-content:space-around;
+  padding: 0px 0px 100px;
+  margin: 0px 0px 15px;
+  border: solid 1px black;
+  list-style: none;
+  text-align: center;
+}
+
+.main-purchase-bottom-content-2 {
+  display: flex;
+  width: 45%;
+  align-items: center;
+  padding: 0px 0px 100px;
+  margin: 0px 0px 15px;
+  border: solid 1px black;
+  justify-content: center;
+}
+
+.campo-calculos {
+  border: solid 1px black;
+  text-align: center;
+}
+
+.campo-navegacion {
+  border: solid 1px black;
+  border-radius: 15%;
+  padding: 5px;
+  text-align: center;
+}
+
+/* .main-purchase-bottom-content-1 ul {
+  justify-content:space-around;
+  margin: 0 auto;
+  list-style: none;
+} */

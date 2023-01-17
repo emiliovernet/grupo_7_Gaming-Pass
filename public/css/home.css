@@ -19,6 +19,13 @@ header .nav-bar {
   font-size: 14px;
   display: flex;
   flex-direction: row;
+  
+}
+
+.cart {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 header ul li {
