@@ -1,8 +1,6 @@
-/* GENERALES */
-
 * {
-    margin: 0px;
-    padding: 4px;
+    margin: 6px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -12,12 +10,24 @@ body {
     position: relative;
 }
 
-/* HEADER */
-
 header {
     background-image: url("/images/IMG-BACKGROUND.JPG");
     box-sizing: border-box;
     margin: 0px;
+}
+
+header .logo {
+    animation: grow 2s ease-out 1 alternate;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 header ul {
@@ -33,6 +43,12 @@ header a {
     display: inline-block;
     padding: 5px 0;
     font-size: 17px;
+    transition: all 650ms;
+}
+
+header a:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .header-top-bar {
@@ -45,6 +61,12 @@ header a {
     width: 100%;
     margin-left: 5%;
     margin-right: 5%;
+    transition: all 650ms;
+}
+
+.form:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .form .input {
@@ -79,13 +101,14 @@ header a {
     font-weight: bold;
 }
 
-/* ESTILOS MAIN */
 
 main {
     display: flex;
     flex-flow: row;
     background-color: white;
     justify-content: space-around;
+    width: 100%;
+    padding: 5%;
 }
 
 main p {
@@ -102,17 +125,27 @@ main p {
     font-weight: bold;
 }
 
-.caracteristicas {
-    display: flex;
-    align-items: center;
-    max-width: 400px;
+.nombre-producto {
+    width: 100%;
+    font-size: 18px;
 }
 
-/* ESTILOS FOOTER */
+.caracteristicas {
+    width: 100%;
+    display: flex;
+    max-width: 400px;
+    font-size: 15px;
+    justify-content: flex-start;
+    position: relative;
+    right: -2%;
+    bottom: 60%;
+    padding: 5%;
+}
 
 footer {
     background-image: url("/images/IMG-BACKGROUND.JPG");
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -120,10 +153,48 @@ footer {
 .logo {
     width: fit-content;
     height: fit-content;
-
 }
 
 .telefono,
-.mail {
+.mail,
+p,
+.logo {
     display: flex;
+    transition: all 650ms;
+}
+
+footer .telefono:hover,
+.mail:hover,
+p:hover,
+.logo:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+@media (min-width: 300px) {
+
+    main {
+        display: block;
+    }
+
+    .imagen-producto {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 600px) {
+    main {
+        display: flex;
+        flex-flow: row;
+        background-color: white;
+        justify-content: space-around;
+        width: 100%;
+        padding: 5%;
+    }
 }

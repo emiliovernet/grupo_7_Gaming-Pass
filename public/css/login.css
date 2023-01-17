@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    background-image: url("/images/IMG-BACKGROUND.JPG");
+    font-family: 'Inter', sans-serif;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.logo-container{
+    height: 40%;
+    margin: auto;
+}
+
+.logo{
+    height: 100%;
+    min-height: 350px;
+    max-width: 350px;
+}
+
+.teclado-container{
+    height: 60%;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    width: 100%;
+}
+
+.teclado{
+   height: 100%;
+   width: 125%;
+   transition: all 650ms;
+}
+
+.teclado:hover{
+-webkit-transform: scale(1.05);
+transform: scale(1.05);
+}
+
+.visual{
+    display: none;
+    flex-direction: column;
+    background-color: #464646;
+    width: 32%;
+    height: 100vh;
+    margin: 0;
+}
+
+.separacion{
+    width: 68vw;
+}
+
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin:auto;
+    padding-top: 120px;
+}
+
+.form{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.form_seccion{
+    display: flex;
+    justify-content: center;
+}
+
+.form__input{
+    box-sizing: border-box;
+    margin-top: 10px;
+    width: 95%;
+    padding: 22px;
+    border: 1px solid #b1afaf;
+    border-radius: 6px;
+    position: relative;
+    right: 1%;
+    transition:all 650ms;
+}
+
+.form__input:hover{
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.form__input:focus{
+
+    outline: solid 0.1px #7e41b3 ;
+}
+.botones-container{
+    display: flex;
+    justify-content: center;
+}
+.botones__separacion{
+    width: 100%;
+}
+
+.boton{
+    box-sizing: border-box;
+    width: 95%;
+    padding: 22px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    background-color: #7e41b3;
+    border: 2px solid #5a2c83;
+    color: #fff;
+    border-radius: 7px;
+    font-size: 17px;
+    transition: all 650ms;
+}
+
+.boton:hover{
+    cursor: pointer;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.enviar .boton {
+    width: 98%;
+}
+
+.olvide{
+    text-align: left;
+}
+
+p{
+    width: 170px;
+    transition: all 650ms;
+}
+
+p:hover{
+    cursor:pointer;
+    text-decoration: underline;
+
+}
+
+
+@media(max-width: 990px){
+    .visual{
+        display: none;
+    }
+    .separacion{
+        width: 100%;
+        min-width: 500px;
+    }
+    .form-container{
+        margin:auto;
+        padding-top: 120px;
+    }
+    
+}
+
+@media(min-width: 991px){
+    .visual{
+        display: flex;
+    }
+}
