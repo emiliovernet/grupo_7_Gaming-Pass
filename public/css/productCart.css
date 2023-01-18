@@ -1,42 +1,100 @@
-/* GENERALES */
-
 * {
-    margin: 5px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
+  margin: 6px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
 body {
-    font-family: "Roboto", sans-serif;
-    background-color: #E5E7E9;
-    position: relative;
-    /* width: 100%; */
+  font-family: "Roboto", sans-serif;
+  background-color: #E5E7E9;
+  position: relative;
 }
 
 header {
-    display: flex;
-    flex-wrap: wrap;
-    background-image: url("/images/IMG-BACKGROUND8.JPG");
+  background-image: url("/images/IMG-BACKGROUND.JPG");
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+@keyframes grow {
+  0% {
+      transform: scale(0.5);
   }
 
-  header .nav-bar {
-    font-size: 14px;
-    display: flex;
-    flex-direction: row;
+  100% {
+      transform: scale(1);
   }
+}
 
-  .form {
-    width: 100%;
-    margin-left: 5%;
-    margin-right: 5%;
+header ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0;
+  display: flex;
+}
+
+header a {
+  text-decoration: none;
+  color: #A569BD;
+  display: inline-block;
+  padding: 5px 0;
+  font-size: 17px;
+  transition: all 650ms;
+}
+
+header a:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.header-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form {
+  width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+  transition: all 650ms;
+}
+
+.form:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .form .input {
-    background-color: #fff;
-    outline: none;
-    color: #666;
-    padding: 2px;
-    border-radius: 3px;
+  background-color: #fff;
+  outline: none;
+  color: #666;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+.nav-header {
+  width: 31%;
+}
+
+.nav-header ul {
+  display: flex;
+  text-align: center;
+}
+
+.nav-header li {
+  margin: auto;
+}
+
+.nav-header a {
+  font-size: 30px;
+
+}
+
+.header-bottom-bar ul {
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
 }
 
 .main-purchase {
@@ -90,9 +148,59 @@ header {
   padding: 5px;
   text-align: center;
 }
+footer {
+  background-image: url("/images/IMG-BACKGROUND.JPG");
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
 
-/* .main-purchase-bottom-content-1 ul {
-  justify-content:space-around;
-  margin: 0 auto;
-  list-style: none;
-} */
+.logo {
+  width: fit-content;
+  height: fit-content;
+}
+
+.telefono,
+.mail,
+p,
+.logo {
+  display: flex;
+  transition: all 650ms;
+}
+
+footer .telefono:hover,
+.mail:hover,
+p:hover,
+.logo:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+@media (min-width: 300px) {
+
+  main {
+      display: block;
+  }
+
+  .imagen-producto {
+      display: flex;
+      justify-content: center;
+  }
+
+  footer {
+      display: flex;
+      flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 600px) {
+  main {
+      display: flex;
+      flex-flow: row;
+      background-color: white;
+      justify-content: space-around;
+      width: 100%;
+      padding: 5%;
+  }
+}
