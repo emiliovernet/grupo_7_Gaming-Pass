@@ -101,8 +101,10 @@ header a:hover {
   display: block;
   background-color: white;
   border: solid 1px black;
-  margin: 15px;
-  padding: 0 100px;
+  margin: 5px;
+  padding: 5px;
+  width: 100%;
+  background-color: rgb(212, 212, 212);
 }
 
 .main-purchase-top-content {
@@ -110,6 +112,8 @@ header a:hover {
   justify-content:space-around;
   border: solid 1px black;
   margin: 15px 0px 0px auto;
+  color:#fff;
+  background-color: #833fbb;
 }
 
 .main-purchase-rest-content {
@@ -118,11 +122,11 @@ header a:hover {
 
 .main-purchase-bottom-content-1 {
   display: flex;
+  flex-wrap: wrap;
   width: 55%;
   justify-content:space-around;
   padding: 0px 0px 100px;
-  margin: 0px 0px 15px;
-  border: solid 1px black;
+  border: solid 1px rgb(168, 167, 167);
   list-style: none;
   text-align: center;
 }
@@ -132,14 +136,15 @@ header a:hover {
   width: 45%;
   align-items: center;
   padding: 0px 0px 100px;
-  margin: 0px 0px 15px;
-  border: solid 1px black;
   justify-content: center;
+  border: solid 1px rgb(148, 148, 148);
 }
 
 .campo-calculos {
   border: solid 1px black;
   text-align: center;
+  background-color: #ab75d8;
+  color:#fff;
 }
 
 .campo-navegacion {
@@ -147,7 +152,17 @@ header a:hover {
   border-radius: 15%;
   padding: 5px;
   text-align: center;
+  background-color: #833fbb;
+  color:#fff;
+  transition: all 650ms;
 }
+
+  .campo-navegacion:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+
 footer {
   background-image: url("/images/IMG-BACKGROUND.JPG");
   display: flex;
@@ -180,7 +195,8 @@ p:hover,
 @media (min-width: 300px) {
 
   main {
-      display: block;
+    display: flex;
+    box-sizing: border-box;
   }
 
   .imagen-producto {
