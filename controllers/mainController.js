@@ -18,6 +18,9 @@ productDetail: (req, res) => {
 },
 productCart: (req, res) => {
     res.render('productCart')
+},
+productForm: (req,res)=>{
+    res.render("productForm")
 }
 };
 

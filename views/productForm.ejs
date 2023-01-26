@@ -1,0 +1,40 @@
+<%-include('partials/head') %> 
+    <link rel="stylesheet" href="/css/productForm.css">
+    <title>Carga de Productos</title>
+</head>
+<body>
+    
+
+    <div class="titulo">
+        <h3>Formulario de creacion de productos</h3>
+    </div>
+
+    <div class="formulario">
+            <form action="/productForm" method="POST">
+                <div>
+                    <label for="nombre">Nombre de Producto:</label> <br>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+               <div>
+                <label for="precio">Precio del producto:</label> <br>
+                <input type="text" name="precio" id="precio">
+               </div>
+                <div>
+                    <label for="marca" >Unidades:</label> <br>
+                    <input type="number" name="marca" id="marca">
+                </div>
+               
+                <div>
+                <label for="descripcion">Descripcion:</label> <br>
+                <textarea></textarea>
+                </div>
+                <div class="boton">
+                    <button class="boton" type="submit">Guardar</button>
+                </div>
+            </form>
+
+        
+    </div>
+
+</body>
+</html>
