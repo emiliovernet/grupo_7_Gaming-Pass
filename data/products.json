@@ -1,0 +1,121 @@
+[
+{ 
+"id": 1,
+"name": "Notebook ASUS ZenBook",
+"image": "IMG-NOTEBOOK1.JPG",
+"price": 500.000 ,
+"discount": 30,
+"category": "notebook",
+"description": "Notebook ASUS ZenBook DUO TOUCH UX482 14 Core I7 1165G7 16GB 1TB SSD NVMe MX450 Screen Pad PLUS 12.65 W10"
+},
+
+{ 
+"id": 2,
+"name": "Notebook XPG Xenia",
+"image": "IMG-NOTEBOOK2.JPG",
+"price": 300.000,
+"discount": 20,
+"category":"notebook" ,
+"description": "Notebook XPG Xenia 15.6 Core I7 1165G7 16GB (2x8GB) 4266Mhz 1TB SSD NVMe W10H Silver" 
+},
+
+{ 
+"id": 3,
+"name": "Notebook Asus Vivobook M3500",
+"image":"IMG-NOTEBOOK3.JPG" ,
+"price": 260.000,
+"discount":10,
+"category": "notebook",
+"description": "Notebook Asus Vivobook M3500 15.6 Ryzen 5 5600H 8GB 512GB SSD NVMe W11 Home" 
+},
+
+{ 
+"id": 4,
+"name": "Notebook Dell Inspiron 3511",
+"image": "IMG-NOTEBOOK4.JPG",
+"price": 240.000,
+"discount": 35,
+"category": "notebook",
+"description": "Notebook Dell Inspiron 3511 15.6 FHD Core I7 1165G7 8GB 256GB SSD NVMe W11 Home" 
+},
+
+{ 
+"id": 5,
+"name":"Monitor Samsung 22 T350H" ,
+"image": "IMG-MONITOR1.JPG",
+"price": 50.000,
+"discount": 15,
+"category": "monitor",
+"description": "Monitor Samsung 22 T350H FHD IPS 75Hz"
+},
+
+{ 
+"id": 6,
+"name": "Monitor Gamer Samsung Odyssey",
+"image":"IMG-MONITOR2.JPG" ,
+"price": 140.000,
+"discount": 20,
+"category":"monitor" ,
+"description": "Monitor Gamer Samsung 32 G3 Odyssey Full HD 165Hz"
+},
+
+{ 
+"id": 7,
+"name": "Monitor ViewSonic",
+"image": "IMG-MONITOR3.JPG",
+"price": 500.000,
+"discount": 10,
+"category": "monitor",
+"description": "Monitor ViewSonic 24.5 XG251G 360Hz IPS"
+},
+
+{ 
+"id": 8,
+"name": "Monitor Samsung 19",
+"image": "IMG-MONITOR4.JPG",
+"price": 50.000,
+"discount": 20,
+"category": "monitor",
+"description":"Monitor Samsung 19 A330N HDMI" 
+},
+
+{ 
+"id": 9,
+"name": "Memoria GeiL",
+"image": "IMG-MEMORIA1.JPG",
+"price": 40.000,
+"discount": 10,
+"category": "memory",
+"description": "Memoria GeiL DDR4 16GB 3000MHz Super Luce RGB Black"
+},
+
+{ 
+"id": 10,
+"name": "Memoria Patriot 8GB",
+"image": "IMG-MEMORIA2.JPG",
+"price": 25.000,
+"discount": 15,
+"category": "memory",
+"description": "Memoria Patriot Viper DDR4 8GB"
+},
+
+{ 
+"id": 11,
+"name": "Memoria Patriot 16GB",
+"image": "IMG-MEMORIA3.JPG",
+"price": 45.000,
+"discount":20,
+"category": "memory",
+"description": "Memoria Patriot Viper DDR4 16GB"
+},
+
+{ 
+"id": 12,
+"name": "Memoria Corsair 16GB",
+"image": "IMG-MEMORIA4.JPG",
+"price": 50.000,
+"discount": 10,
+"category": "memory",
+"description": "Memoria Corsair DDR4 DDR4 16GB (2x8GB) 3200MHz Vengance RGB RS"
+}
+]
