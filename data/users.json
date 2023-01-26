@@ -38,4 +38,33 @@
     "password": "fmXJBsCHP2023",
     "type": "Admin",
     "avatar": "/images/avatars/tostada.jpg"
+  }, {
+    "id": 6,
+    "firstName": "Virginia",
+    "lastName": "Schmied",
+    "email": "schmiedvirginia@gmail.com",
+    "password": "virgi123",
+    "type": "Customer",
+    "avatar": ""
+  }, {
+    "firstName": "Hernan",
+    "lastName": "Pereyra",
+    "email": "hernanpereyra@gmail.com",
+    "password": "hernan123",
+    "type": "Customer",
+    "avatar": "/images/avatars/polloCorazon.jpg"
+  }, {
+    "firstName": "Emilio",
+    "lastName": "Vernet",
+    "email": "emiliovernet@gmail.com",
+    "password": "emilio123",
+    "type": "Customer",
+    "avatar": "/images/avatars/polloCorazon.jpg"
+  }, {
+    "firstName": "Federico Agustin",
+    "lastName": "Granda Murua",
+    "email": "federicomurua@gmail.com",
+    "password": "agus123",
+    "type": "Customer",
+    "avatar": "/images/avatars/polloCorazon.jpg"
   }]
