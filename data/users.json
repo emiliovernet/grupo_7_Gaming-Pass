@@ -47,6 +47,7 @@
     "type": "Customer",
     "avatar": ""
   }, {
+    "id": 7,
     "firstName": "Hernan",
     "lastName": "Pereyra",
     "email": "hernanpereyra@gmail.com",
@@ -54,6 +55,7 @@
     "type": "Customer",
     "avatar": "/images/avatars/polloCorazon.jpg"
   }, {
+    "id": 8,
     "firstName": "Emilio",
     "lastName": "Vernet",
     "email": "emiliovernet@gmail.com",
@@ -61,6 +63,7 @@
     "type": "Customer",
     "avatar": "/images/avatars/polloCorazon.jpg"
   }, {
+    "id": 9,
     "firstName": "Federico Agustin",
     "lastName": "Granda Murua",
     "email": "federicomurua@gmail.com",
