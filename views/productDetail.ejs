@@ -1,6 +1,6 @@
     <%- include('partials/head') %> 
     <link rel="stylesheet" href="/css/productDetail.css" />
-    <title>Producto#</title>
+    <title><%= product.name %> </title>
 </head>
 
 <body>
@@ -9,9 +9,9 @@
 
     <main>
         <section class="producto">
-                <img class="imagen-producto" src="/images/IMG-NOTEBOOK1.JPG" alt="Notebook ASUS ZenBook DUO TOUCH UX482 14">
+                <img class="imagen-producto" src="/images/<%= product.image %> " alt="<%= product.description %> ">
             <article class="estado-producto">
-                <h2 class="nombre-producto">Notebook ASUS ZenBook DUO TOUCH UX482 14" Core I7 1165G7 16GB 1TB SSD NVMe MX450 Screen Pad PLUS 12.65" W10 </h2>
+                <h2 class="nombre-producto"><%= product.name %></h2>
                 <p class="disponiblidad">10 unidades disponibles</p>
                 <p class="envio">Envío gratis<i class="fas fa-truck truck-icon"></i></p>
             </article>
@@ -19,14 +19,22 @@
         <section class="caracteristicas">
             <article >
                 <h1>Caracteristicas</h1>
-                <p>-Tamaño De La Pantalla: 14.00 pulgadas</p>
-                <p>-Idioma Del Teclado: Español</p>
+                <p><%= product.description %></p>
+                <!-- <p>-Idioma Del Teclado: Español</p>
                 <p>-Ram Integrada: 16 gb</p>
                 <p>-Color: Azul</p>
                 <p>-Peso: 1.57 kg</p>
                 <p>-Bluetooth: Si</p>
                 <p>-Puertos Hdmi: 1</p>
-                <P>Tipo De Gpu: Nvidia GeForce</P>
+                <P>Tipo De Gpu: Nvidia GeForce</P> -->
+            </article>
+            <article>
+                <h1>Precio</h1>
+                <p>$<%= product.price %></p>
+            </article>
+            <article>
+                <h1>Descuento</h1>
+                <p><%= product.discount %>%</p>
             </article>
         </section>
     </main>
