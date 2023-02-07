@@ -37,6 +37,12 @@
                 <p><%= product.discount %>%</p>
             </article>
         </section>
+        <section class="botones">
+            <a href="/<%= product.id %>/edit" class="action-button edit">EDITAR PRODUCTO</a>
+						<form action="/<%= product.id %>?_method=DELETE " method="POST">
+							<button type="submit" class="action-button delete">ELIMINAR</button>
+						</form>
+        </section>
     </main>
     
 <%- include('partials/footer') %>

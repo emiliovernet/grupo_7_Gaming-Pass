@@ -1,40 +1,50 @@
-<%-include('partials/head') %> 
+<%- include('partials/head')  %> 
     <link rel="stylesheet" href="/css/productForm.css">
     <title>Carga de Productos</title>
-</head>
-<body>
-    
+    </head>
 
-    <div class="titulo">
-        <h3>Crea un nuevo producto</h3>
-    </div>
+    <body>
 
-    <div class="formulario">
+
+        <div class="titulo">
+            <h3>Crea un nuevo producto</h3>
+        </div>
+
+        <div class="formulario">
             <form action="/productForm" method="POST">
                 <div>
-                    <label for="nombre">Nombre de Producto:</label> <br>
-                    <input type="text" name="nombre" id="nombre">
+                    <label for="name">Nombre de Producto:</label> <br>
+                    <input type="text" name="name" id="name">
                 </div>
-               <div>
-                <label for="precio">Precio del producto:</label> <br>
-                <input type="text" name="precio" id="precio">
-               </div>
                 <div>
-                    <label for="marca" >Unidades:</label> <br>
-                    <input type="number" name="marca" id="marca">
+                    <label for="price">Precio del producto:</label> <br>
+                    <input type="text" name="price" id="price">
                 </div>
-               
                 <div>
-                <label for="descripcion">Descripcion:</label> <br>
-                <textarea></textarea>
+                    <label for="discount">Descuento:</label> <br>
+                    <input type="number" name="discount" id="discount">
+                </div>
+                <div>
+                    <label for="category">Categoría:</label>
+                    <select id="category" name="category">
+                        <option value="notebook">Notebook</option>
+                        <option value="monitor">Monitor</option>
+                        <option value="memory">Memoria</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="description">Descripcion:</label> <br>
+                    <textarea name="description" id="description"></textarea>
                 </div>
                 <div class="boton">
                     <button class="boton" type="submit">Guardar</button>
                 </div>
             </form>
 
-        
-    </div>
 
-</body>
-</html>
+        </div>
+
+    </body>
+
+    </html>

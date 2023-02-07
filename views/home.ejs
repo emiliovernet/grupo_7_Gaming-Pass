@@ -16,47 +16,18 @@
     <section class="Notebooks">
         <h3>Notebooks</h3>
         <div class="products">
-
+            <% products.forEach((product)=>{ %> 
+                <% if(product.category == "notebook") { %> 
             <article>
-            <a href="/detail/1"><img src="/images/IMG-NOTEBOOK1.JPG" width="360px" alt="Notebook ASUS ZenBook DUO TOUCH UX482 14"></a>
+            <a href="/detail/<%= product.id %> "><img src="/images/<%= product.image %> " width="360px" alt="<%= product.description %> "></a>
                 <div class="main-article">
                     <i class="fas fa-truck truck-icon"></i>
-                    <p class="price">$500.000</p>
-                    <p class="discount">40% off</p>
-                    <h4 class="description">Notebook ASUS ZenBook DUO TOUCH UX482 14"...</h4>
+                    <p class="price">$<%= product.price %> </p>
+                    <p class="discount"><%= product.discount %> % off</p>
+                    <h4 class="description"><%= product.description %> </h4>
                 </div>
             </article>
-
-            <article>
-                <a href="/detail/1"><img src="/images/IMG-NOTEBOOK2.JPG" width="360px" alt="Notebook Gamer XPG XENIA 15.6"></a>
-                <div class="main-article">
-                    <i class="fas fa-truck truck-icon"></i>
-                    <p class="price">$260.020</p>
-                    <p class="discount">40% off</p>
-                    <h4 class="description">Notebook Gamer XPG XENIA 15.6"..."</h4>
-                </div>
-            </article>
-
-            <article>
-                <a href="/detail/1"><img src="/images/IMG-NOTEBOOK3.JPG" width="360px" alt="Notebook Asus Vivobook M3500 15.6"></a>
-                <div class="main-article">
-                    <i class="fas fa-truck truck-icon"></i>
-                    <p class="price">$190.099</p>
-                    <p class="discount">20% off</p>
-                    <h4 class="description">Notebook Asus Vivobook M3500 15.6"..."</h4>
-                </div>
-            </article>
-
-            <article>
-                <a href="/detail/1"><img src="/images/IMG-NOTEBOOK4.JPG" width="360px" alt="Notebook Dell Inspiron 3511 15.6"></a>
-                <div class="main-article">
-                    <i class="fas fa-truck truck-icon"></i>
-                    <p class="price">$234.030</p>
-                    <p class="discount">30% off</p>
-                    <h4 class="description">Notebook Dell Inspiron 3511 15.6"...</h4>
-                </div>
-            </article>
-
+            <%}}) %> 
 </section>
 
 <section class="banner">
@@ -66,91 +37,36 @@
 <section class="Monitores">
     <h3>Monitores</h3>
     <div class="products">
-
+        <% products.forEach((product)=>{ %> 
+            <% if(product.category == "monitor") { %> 
         <article>
-        <img src="/images/IMG-MONITOR1.JPG" width="360px" alt="Monitor Samsung 22T350H FHD IPS 75Hz">
+        <a href="/detail/<%= product.id %> "><img src="/images/<%= product.image %> " width="360px" alt="<%= product.description %> "></a>
             <div class="main-article">
                 <i class="fas fa-truck truck-icon"></i>
-                <p class="price">$39.899</p>
-                <p class="discount">20% off</p>
-                <h4 class="description">Monitor Samsung 22" T350H FHD IPS 75Hz</h4>
+                <p class="price">$<%= product.price %> </p>
+                <p class="discount"><%= product.discount %> % off</p>
+                <h4 class="description"><%= product.description %> </h4>
             </div>
         </article>
-
-        <article>
-            <img src="/images/IMG-MONITOR2.JPG" width="360px" alt="Monitor Gamer Samsung 27 G3 Odyssey Full HD 144Hz">
-            <div class="main-article">
-                <i class="fas fa-truck truck-icon"></i>
-                <p class="price">$80.020</p>
-                <p class="discount">10% off</p>
-                <h4 class="description">Monitor Gamer Samsung 27" G3 Odyssey Full HD 144Hz</h4>
-            </div>
-        </article>
-
-        <article>
-            <img src="/images/IMG-MONITOR3.JPG" width="360px" alt="Monitor ViewSonic 24.5XG250 240Hz IPS">
-            <div class="main-article">
-                <i class="fas fa-truck truck-icon"></i>
-                <p class="price">$150.099</p>
-                <p class="discount">10% off</p>
-                <h4 class="description">Monitor ViewSonic 24.5" XG250 240Hz IPS</h4>
-            </div>
-        </article>
-
-        <article>
-            <img src="/images/IMG-MONITOR4.JPG" width="360px" alt="Monitor Samsung 19 A330N HDMI">
-            <div class="main-article">
-                <i class="fas fa-truck truck-icon"></i>
-                <p class="price">$45.030</p>
-                <p class="discount">15% off</p>
-                <h4 class="description">Monitor Samsung 19" A330N HDMI</h4>
-            </div>
-        </article>
+        <%}}) %> 
 </section>
 
 <section class="memory">
     <h3>Memorias</h3>
     <div class="products">
-
+        <% products.forEach((product)=>{ %> 
+            <% if(product.category == "memory") { %> 
         <article>
-        <img src="/images/IMG-MEMORIA1.JPG" width="360px" alt="Memoria GeiL DDR4 16GB">
+        <a href="/detail/<%= product.id %> "><img src="/images/<%= product.image %> " width="360px" alt="<%= product.description %> "></a>
             <div class="main-article">
                 <i class="fas fa-truck truck-icon"></i>
-                <p class="price">$39.899</p>
-                <p class="discount">10% off</p>
-                <h4 class="description">Memoria GeiL DDR4 16GB</h4>
+                <p class="price">$<%= product.price %> </p>
+                <p class="discount"><%= product.discount %> % off</p>
+                <h4 class="description"><%= product.description %> </h4>
             </div>
         </article>
-
-        <article>
-            <img src="/images/IMG-MEMORIA2.JPG" width="360px" alt="Memoria Patriot Viper DDR4 8GB">
-            <div class="main-article">
-                <i class="fas fa-truck truck-icon"></i>
-                <p class="price">$20.020</p>
-                <p class="discount">10% off</p>
-                <h4 class="description">Memoria Patriot Viper DDR4 8GB</h4>
-            </div>
-        </article>
-
-        <article>
-            <img src="/images/IMG-MEMORIA3.JPG" width="360px" alt="Memoria Patriot Viper DDR4 16GB">
-            <div class="main-article">
-                <i class="fas fa-truck truck-icon"></i>
-                <p class="price">$39.099</p>
-                <p class="discount">10% off</p>
-                <h4 class="description">Memoria Patriot Viper DDR4 16GB</h4>
-            </div>
-        </article>
-
-        <article>
-            <img src="/images/IMG-MEMORIA4.JPG" width="360px" alt="Memoria Corsair DDR4 DDR4 16GB">
-            <div class="main-article">
-                <i class="fas fa-truck truck-icon"></i>
-                <p class="price">$43.000</p>
-                <p class="discount">10% off</p>
-                <h4 class="description">Memoria Corsair DDR4 DDR4 16GB</h4>
-            </div>
-        </article>
+        <%}}) %> 
+</section>
 
 <section class="banner">
     <img src="/images/IMG-BANNER3.JPG" alt="Banner de ofertas">
