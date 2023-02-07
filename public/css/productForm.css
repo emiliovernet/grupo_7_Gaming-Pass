@@ -1,7 +1,8 @@
 body{
     margin: 0;
     background-image: url("/images/IMG-BACKGROUND.JPG");
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color:rgb(72, 67, 75)
 }
 
 
@@ -10,13 +11,14 @@ body{
     display: flex;
     align-items: flex-end;
     margin: 30px;
+    font-size: 100%;
 }
 
 
 .formulario{
     margin: 30px;
     height: 55vh;
-    background-color: #b1afaf;
+    background-color: #c0a8ce;
     border: solid 1px ;
     padding: 14px;
     border-radius: 10px;
@@ -36,7 +38,14 @@ form{
     font-weight: bold;
     width: 50%;
     height: 40px;
-   
+    color:rgb(72, 67, 75);
+    transition: all 650ms
+
+}
+
+.boton:hover{
+    -webkit-transform: scale(1);
+    transform: scale(1.02);
 }
 
 input{
@@ -45,8 +54,16 @@ input{
     height: 32px;
     box-sizing: border-box;
     margin-top: 8px;
- 
+    border-radius: 5px;
+    border: 1px solid #aaaaaa;
+    transition: all 650ms
 }
+
+input:hover{
+    -webkit-transform: scale(1);
+    transform: scale(1.02);
+}
+
 
 input:focus{
     outline: solid 0.1px #7e41b3 ;
@@ -56,6 +73,8 @@ input:focus{
 textarea{
     width: 50%;
     height: 45px;
+    border-radius: 5px;
+    border: 1px solid #aaaaaa
 }
 
 textarea:focus{
