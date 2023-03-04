@@ -11,6 +11,9 @@ const controller = {
     
     register: (req, res) => {
         res.render('register')
+    },
+    perfil:(req,res) => {
+        res.render("")
     }
 
 

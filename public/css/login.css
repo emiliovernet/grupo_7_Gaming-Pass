@@ -56,6 +56,7 @@ transform: scale(1.05);
     display: flex;
     flex-direction: column;
     max-width: 500px;
+    max-height: 500px;
     margin:auto;
     padding-top: 120px;
 }
@@ -63,6 +64,10 @@ transform: scale(1.05);
 .form{
     margin-top: 20px;
     margin-bottom: 15px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .form_seccion{
@@ -82,10 +87,7 @@ transform: scale(1.05);
     transition:all 650ms;
 }
 
-.form__input:hover{
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-}
+
 
 .form__input:focus{
 
@@ -121,6 +123,12 @@ transform: scale(1.05);
 
 .enviar .boton {
     width: 98%;
+   
+}
+.enviar{
+    margin-top: 30px;
+
+
 }
 
 .olvide{
