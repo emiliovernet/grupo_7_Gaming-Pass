@@ -62,6 +62,8 @@ transform: scale(1.05);
 }
 
 .form{
+    justify-content: center;
+    
     margin-top: 20px;
     margin-bottom: 15px;
     height: 250px;
@@ -72,7 +74,17 @@ transform: scale(1.05);
 
 .form_seccion{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    padding-left: 12px;
+  
+}
+.error-msj{
+    color:red;
+    font-size: 15px;
+    font-family: 'arial', sans-serif;
+  
+    text-align: left;
+
 }
 
 .form__input{
@@ -86,7 +98,6 @@ transform: scale(1.05);
     right: 1%;
     transition:all 650ms;
 }
-
 
 
 .form__input:focus{

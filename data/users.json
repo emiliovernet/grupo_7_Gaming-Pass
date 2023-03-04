@@ -1,73 +1,119 @@
-[{
-    "id": 1,
-    "firstName": "Maria",
-    "lastName": "Gomez",
-    "email": "mariagomez1@gmail.com",
-    "password": "MMMaria",
-    "type": "Customer",
-    "avatar": ""
-  }, {
-    "id": 2,
-    "firstName": "Estefania",
-    "lastName": "Rodriguez",
-    "email": "estef@rodriguez.com",
-    "password": "ESTEF1000",
-    "type": "Customer",
-    "avatar": "/images/avatars/pretzel.jpg"
-  }, {
-    "id": 3,
-    "firstName": "Martin",
-    "lastName": "Rios",
-    "email": "martinrios2@instagram.com",
-    "password": "martinrios2022",
-    "type": "Customer",
-    "avatar": ""
-  }, {
-    "id": 4,
-    "firstName": "Mauricio",
-    "lastName": "Lencina",
-    "email": "mauriciolencina2023@4shared.com",
-    "password": "computer123",
-    "type": "Customer",
-    "avatar": "/images/avatars/polloCorazon.jpg"
-  }, {
-    "id": 5,
-    "firstName": "Sabrina",
-    "lastName": "Aguilar",
-    "email": "sabri222@gmail.com",
-    "password": "fmXJBsCHP2023",
-    "type": "Admin",
-    "avatar": "/images/avatars/tostada.jpg"
-  }, {
-    "id": 6,
-    "firstName": "Virginia",
-    "lastName": "Schmied",
-    "email": "schmiedvirginia@gmail.com",
-    "password": "virgi123",
-    "type": "Customer",
-    "avatar": ""
-  }, {
-    "id": 7,
-    "firstName": "Hernan",
-    "lastName": "Pereyra",
-    "email": "hernanpereyra@gmail.com",
-    "password": "hernan123",
-    "type": "Customer",
-    "avatar": "/images/avatars/polloCorazon.jpg"
-  }, {
-    "id": 8,
-    "firstName": "Emilio",
-    "lastName": "Vernet",
-    "email": "emiliovernet@gmail.com",
-    "password": "emilio123",
-    "type": "Customer",
-    "avatar": "/images/avatars/polloCorazon.jpg"
-  }, {
-    "id": 9,
-    "firstName": "Federico Agustin",
-    "lastName": "Granda Murua",
-    "email": "federicomurua@gmail.com",
-    "password": "agus123",
-    "type": "Customer",
-    "avatar": "/images/avatars/polloCorazon.jpg"
-  }]
+[
+ {
+  "id": 1,
+  "firstName": "Maria",
+  "lastName": "Gomez",
+  "email": "mariagomez1@gmail.com",
+  "password": "MMMaria",
+  "type": "Customer",
+  "avatar": ""
+ },
+ {
+  "id": 2,
+  "firstName": "Estefania",
+  "lastName": "Rodriguez",
+  "email": "estef@rodriguez.com",
+  "password": "ESTEF1000",
+  "type": "Customer",
+  "avatar": "/images/avatars/pretzel.jpg"
+ },
+ {
+  "id": 3,
+  "firstName": "Martin",
+  "lastName": "Rios",
+  "email": "martinrios2@instagram.com",
+  "password": "martinrios2022",
+  "type": "Customer",
+  "avatar": ""
+ },
+ {
+  "id": 4,
+  "firstName": "Mauricio",
+  "lastName": "Lencina",
+  "email": "mauriciolencina2023@4shared.com",
+  "password": "computer123",
+  "type": "Customer",
+  "avatar": "/images/avatars/polloCorazon.jpg"
+ },
+ {
+  "id": 5,
+  "firstName": "Sabrina",
+  "lastName": "Aguilar",
+  "email": "sabri222@gmail.com",
+  "password": "fmXJBsCHP2023",
+  "type": "Admin",
+  "avatar": "/images/avatars/tostada.jpg"
+ },
+ {
+  "id": 6,
+  "firstName": "Virginia",
+  "lastName": "Schmied",
+  "email": "schmiedvirginia@gmail.com",
+  "password": "virgi123",
+  "type": "Customer",
+  "avatar": ""
+ },
+ {
+  "id": 7,
+  "firstName": "Hernan",
+  "lastName": "Pereyra",
+  "email": "hernanpereyra@gmail.com",
+  "password": "hernan123",
+  "type": "Customer",
+  "avatar": "/images/avatars/polloCorazon.jpg"
+ },
+ {
+  "id": 8,
+  "firstName": "Emilio",
+  "lastName": "Vernet",
+  "email": "emiliovernet@gmail.com",
+  "password": "emilio123",
+  "type": "Customer",
+  "avatar": "/images/avatars/polloCorazon.jpg"
+ },
+ {
+  "id": 9,
+  "firstName": "Federico Agustin",
+  "lastName": "Granda Murua",
+  "email": "federicomurua@gmail.com",
+  "password": "agus123",
+  "type": "Customer",
+  "avatar": "/images/avatars/polloCorazon.jpg"
+ },
+ {
+  "id": 10,
+  "nombre": "Agus",
+  "email": "AgusG@gmail.com",
+  "password": "Agus12345"
+ },
+ {
+  "id": 11,
+  "nombre": "Agus",
+  "email": "AgusG@gmail.com",
+  "password": "Agus987654321"
+ },
+ {
+  "id": 12,
+  "nombre": "Agus",
+  "email": "AgusG@gmail.com",
+  "password": "Agus654654654654654"
+ },
+ {
+  "id": 13,
+  "nombre": "Agus",
+  "email": "AgusG@gmail.com",
+  "password": "321654987"
+ },
+ {
+  "id": 14,
+  "nombre": "asdasd",
+  "email": "",
+  "password": ""
+ },
+ {
+  "id": 15,
+  "nombre": "asdasd",
+  "email": "",
+  "password": "asdasd"
+ }
+]
