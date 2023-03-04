@@ -79,41 +79,5 @@
   "password": "agus123",
   "type": "Customer",
   "avatar": "/images/avatars/polloCorazon.jpg"
- },
- {
-  "id": 10,
-  "nombre": "Agus",
-  "email": "AgusG@gmail.com",
-  "password": "Agus12345"
- },
- {
-  "id": 11,
-  "nombre": "Agus",
-  "email": "AgusG@gmail.com",
-  "password": "Agus987654321"
- },
- {
-  "id": 12,
-  "nombre": "Agus",
-  "email": "AgusG@gmail.com",
-  "password": "Agus654654654654654"
- },
- {
-  "id": 13,
-  "nombre": "Agus",
-  "email": "AgusG@gmail.com",
-  "password": "321654987"
- },
- {
-  "id": 14,
-  "nombre": "asdasd",
-  "email": "",
-  "password": ""
- },
- {
-  "id": 15,
-  "nombre": "asdasd",
-  "email": "",
-  "password": "asdasd"
  }
 ]
