@@ -1,5 +1,8 @@
 const path = require('path')
 const fs = require('fs')
+
+const bcryptjs = require("bcryptjs");
+
 const { validationResult } = require("express-validator");
 
 
@@ -31,7 +34,8 @@ const controller = {
        const nuevoUsuario = {
         id: users[users.length - 1].id + 1,
         ...req.body,
-        avatar: req.file.path,
+        password: bcryptjs.hashSync(req.body.password , 10),
+        avatar: req.file.filename,
               };
             users.push(nuevoUsuario);
         fs.writeFileSync(usersFilePath, JSON.stringify(users, null, ' '));
