@@ -6,16 +6,6 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const controller = {
     
-    // USUARIOS
-    login: (req, res) => {
-        res.render('login')
-    },
-    
-    register: (req, res) => {
-        res.render('register')
-    },
-
-    // PRODUCTOS
     home: (req, res) => {
         res.render('home', {
 			products

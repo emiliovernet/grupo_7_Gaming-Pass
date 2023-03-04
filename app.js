@@ -5,6 +5,7 @@ const methodOverride = require("method-override");
 
 
 const productsRouter = require('./routers/products');
+const usersRouter = require('./routers/users');
 
 
 app.set('view engine', 'ejs');
@@ -18,6 +19,7 @@ app.use(express.json());
 
 
 app.use('/', productsRouter);
+app.use('/users', usersRouter);
 
 app.listen(3030, () => {
     console.log('Servidor iniciado en http://localhost:3030');

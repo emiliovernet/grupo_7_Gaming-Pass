@@ -3,9 +3,6 @@ const router = express.Router();
 
 const productsController = require('../controllers/productsController.js')
 
-// Usuarios
-router.get('/login', productsController.login);
-router.get('/register', productsController.register);
 
 // Productos
 router.post('/productForm', productsController.store);
