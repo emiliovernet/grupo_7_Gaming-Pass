@@ -79,5 +79,54 @@
   "password": "agus123",
   "type": "Customer",
   "avatar": "/images/avatars/polloCorazon.jpg"
+ },
+ {
+  "id": 10,
+  "nombre": "asd",
+  "email": "aguskpo@hotmail.com",
+  "password": "borjita",
+  "avatar": "public\\images\\avatars\\1677962888335_img.png"
+ },
+ {
+  "id": 11,
+  "nombre": "asd",
+  "email": "aguskpo@hotmail.com",
+  "password": "borjita",
+  "avatar": "public\\images\\avatars\\1677963171591_img.png"
+ },
+ {
+  "id": 12,
+  "nombre": "asd",
+  "email": "aguskpo@hotmail.com",
+  "password": "3216594987",
+  "avatar": "public\\images\\avatars\\1677963510531_img.png"
+ },
+ {
+  "id": 13,
+  "nombre": "asd",
+  "email": "aguskpo@hotmail.com",
+  "password": "asdasdads",
+  "avatar": "public\\images\\avatars\\1677963592371_img.psd"
+ },
+ {
+  "id": 14,
+  "nombre": "asd",
+  "email": "aguskpo@hotmail.com",
+  "password": "asdasdasdasd",
+  "avatar": "public\\images\\avatars\\1677963603406_img.psd"
+ },
+ {
+  "id": 15,
+  "nombre": "asd",
+  "email": "aguskpo@hotmail.com",
+  "password": "321654987",
+  "avatar": "public\\images\\avatars\\1677963716572_img.psd"
+ },
+ {
+  "id": 16,
+  "nombre": "asd",
+  "email": "aguskpo@hotmail.com",
+  "password": "asdasdasdasdasd",
+  "avatar": "public\\images\\avatars\\1677963721580_img.png"
  }
 ]

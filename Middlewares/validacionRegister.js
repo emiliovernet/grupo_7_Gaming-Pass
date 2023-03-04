@@ -12,7 +12,7 @@ const validaciones = [
     body("password").notEmpty().withMessage('Contraseña requerida'),
     body("avatar").custom((value, { req }) => {
             let archivo = req.file;
-            let extensionValida = [".jpg" ,".png"]
+            let extensionValida = [".jpg" ,".png"];
 
             if(!archivo){
                 throw new Error ("Debes subir una imagen");
@@ -22,9 +22,11 @@ const validaciones = [
                     throw new Error (`Los formatos válidos son ${extensionValida.join(', ')}`);
                 }
             }
+
+            return true;
     })
 
 ]
 
 
-module.exports = validaciones;
+module.exports = validaciones
