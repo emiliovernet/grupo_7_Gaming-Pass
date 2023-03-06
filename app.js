@@ -2,7 +2,12 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const methodOverride = require("method-override");
+const session = require("express-session")
 
+
+const usuarioLogueadoMiddleware = require("./Middlewares/usuarioLogueado");
+
+app.use(usuarioLogueadoMiddleware);
 
 const productsRouter = require('./routers/products');
 const usersRouter = require('./routers/users');
@@ -11,6 +16,12 @@ const usersRouter = require('./routers/users');
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, './views'));
 app.use(express.static('public'));
+app.use(session({
+    secret:"Esto es un secreto",
+    resave: false,
+    saveUninitialized: false
+}))
+
 
 app.use(methodOverride("_method"))
 // app.use(express.static(path.join(__dirname, '../public'))); 

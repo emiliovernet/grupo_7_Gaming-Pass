@@ -28,12 +28,18 @@
             </div>
            </div> 
         
-            <form class="form" action="/login" method="POST">
+            <form class="form" action="/users/login" method="POST">
                 <div class="form_seccion">
-                    <input class="form__input" type="email" name="email" id="txfEmail" placeholder="Email" autocomplete="off">
+                    <input class="form__input" type="email" name="email" id="txfEmail" placeholder="Email">
+                    
                 </div>
                 <div class="form_seccion">
-                    <input class="form__input" type="password" name="password" id="txfPassword" placeholder="Contraseña" autocomplete="off">
+                    <input class="form__input" type="password" name="password" id="txfPassword" placeholder="Contraseña">
+                    <% if (locals.errors && errors.email) { %>
+                        <div class="error-msj">
+                      <%= errors.email.msg %> 
+                        </div>  
+                    <% } %>
                 </div>
                 <div class="enviar" >
                     <a href="/"><button class="boton" type="submit">Iniciar sesión</button></a>

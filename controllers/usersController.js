@@ -13,13 +13,42 @@ const controller = {
     login: (req, res) => {
         res.render('login')
     },
+    procesarLogin:(req,res)=>{
+        let usuarioLogin = users.find((usuario) => usuario.email == req.body.email);
+        
+        if(usuarioLogin){
+            let contraseñaOk = bcryptjs.compareSync(req.body.password, usuarioLogin.password);
+            
+            if(contraseñaOk){
+                req.session.usuarioLogueado = usuarioLogin;
+                res.redirect("/");
+            }
+            
+            res.render("login", {
+               errors: {
+                   email: {
+                       msg: "Email o contraseña incorrecto"
+                   }
+               }
+           })
+            
+         }
+
+        return res.render("login", {
+            errors: {
+                email: {
+                    msg: "Email o contraseña incorrecto"
+                }
+            }
+        })
+
+
+    },
     
     register: (req, res) => {
         res.render('register')
     },
-    perfil:(req,res) => {
-        res.render("")
-    },
+   
     procesarRegister: (req,res) => {
        const resultadosDeValidacion = validationResult(req);
        
@@ -40,6 +69,10 @@ const controller = {
             users.push(nuevoUsuario);
         fs.writeFileSync(usersFilePath, JSON.stringify(users, null, ' '));
         res.redirect('/')
+    },
+    logout:(req,res) => {
+        req.session.destroy();
+        res.redirect("/");
     }
 
 

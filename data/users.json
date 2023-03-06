@@ -73,11 +73,18 @@
  },
  {
   "id": 9,
-  "firstName": "Federico Agustin",
-  "lastName": "Granda Murua",
-  "email": "federicomurua@gmail.com",
+  "firstName": "Agustin",
+  "lastName": "Granda",
+  "email": "federicogranda@gmail.com",
   "password": "agus123",
-  "type": "Customer",
+  "type": "Admin",
   "avatar": "/images/avatars/polloCorazon.jpg"
+ },
+ {
+  "id": 10,
+  "nombre": "Agus",
+  "email": "agus.granda@gmail.com",
+  "password": "$2a$10$PVO4GPuGqXJHBaRho.Ya6OO1aJ24OIu8lbTcK/V8Ji0J9EKCj1AQy",
+  "avatar": "1678044149327_img.png"
  }
-]
+] 

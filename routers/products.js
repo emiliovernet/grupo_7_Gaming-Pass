@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const productsController = require('../controllers/productsController.js')
+const adminMiddleware = require('../Middlewares/admin.js')
 
 
 // Productos
@@ -11,7 +12,8 @@ router.get('/:id/edit', productsController.edit);
 router.delete('/:id', productsController.destroy); 
 router.get('/', productsController.home);
 router.get('/detail/:id/', productsController.productDetail);
-// router.get('/productCart', productsController.productCart);
-router.get('/create', productsController.productCreate);
+// router.get('/productCart', adminMiddleware , productsController.productCart);
+router.get('/create', adminMiddleware , productsController.productCreate);
 
 module.exports = router;
+
