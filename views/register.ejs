@@ -33,10 +33,10 @@
             
                 <form class="form"  method="POST" action="/users/register" enctype="multipart/form-data">
                     <div class="form_seccion">
-                        <input class="form__input" type="text" name="nombre" id="txfNombre" placeholder="Nombre" value="<%= locals.oldData ? oldData.nombre : null %>">
-                        <% if (locals.errors && errors.nombre) { %>
+                        <input class="form__input" type="text" name="name" id="txfname" placeholder="Nombre" value="<%= locals.oldData ? oldData.name : null %>">
+                        <% if (locals.errors && errors.name) { %>
                             <div class="error-msj">
-                          <%= errors.nombre.msg %>
+                          <%= errors.name.msg %>
                             </div>
                         <% } %>
                     </div>
