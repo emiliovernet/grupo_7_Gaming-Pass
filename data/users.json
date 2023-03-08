@@ -128,5 +128,12 @@
   "email": "mabona4303@seinfaq.com",
   "password": "$2a$10$9gkN1ZKRuZRGa7sT2hkPvOzV2PvDh0Ogpo5Eq3sQdFkFtKYnKdHKm",
   "avatar": "1678222132573_img.png"
+ },
+ {
+  "id": 17,
+  "name": "Cafetera Moulinex Dolce Gusto",
+  "email": "emilio_vernet@hotmail.com",
+  "password": "$2a$10$susqTH4nW.lN5KpHEH6mY.OXrgcl8laXzciRBCnwaTIlYVGGnyE.m",
+  "avatar": "1678277307444_img.png"
  }
 ]

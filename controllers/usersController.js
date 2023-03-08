@@ -21,7 +21,7 @@ const controller = {
             
             if(contraseñaOk){
                 req.session.userLogged = userToLogin;
-                 return res.redirect('/');
+                return res.redirect('/');
             }
             
             res.render("login", {
