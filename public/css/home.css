@@ -15,7 +15,7 @@ header {
   margin: 0px;
 }
 
-@keyframes grow {
+/* @keyframes grow {
   0% {
       transform: scale(0.5);
   }
@@ -23,7 +23,7 @@ header {
   100% {
       transform: scale(1);
   }
-}
+} */
 
 header ul {
   list-style: none;
@@ -53,16 +53,25 @@ transform: scale(1.05);
 }
 
 .form {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
-  transition: all 650ms;
+}
+.input{
+  height: 30px;
+  width: 50%;
+}
+.input:focus{
+  outline: solid 0.1px #7e41b3 ;
+}
+.icon{
+  padding: 3px 0px 0px 7px;
 }
 
-.form:hover {
+/* .form:hover {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
-}
+} */
 
 .form .input {
   background-color: #fff;
@@ -227,14 +236,14 @@ main section h3 {
 .beneficies {
   background-color: rgb(151, 151, 151);;
   width: 100%;
-  transition: all 650ms;
+  /* transition: all 650ms; */
 }
 
-.beneficies:hover {
+/* .beneficies:hover {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
   background-color: rgb(124, 124, 124);
-}
+} */
 
 .fa-truck-moving, .fa-credit-card{
   align-self: center;

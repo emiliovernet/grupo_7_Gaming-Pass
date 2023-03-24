@@ -1,60 +1,62 @@
     <%- include('partials/head') %> 
     <link rel="stylesheet" href="/css/productCart.css" />
-    <title>Tu carrito</title>
+    <title>Carrito de compas </title>
 </head>
 <body>
     <%- include('partials/header') %>
     
-    <section class="main-purchase">
-        <section class="main-purchase-top-content">
-            <h3>
-                Carrito
-            </h3>
-            <h3>
-                Detalle de compra
-            </h3>
+    <section class="main__container">
+
+
+        <section class="left__content">
+            <div class="cart" >
+                <h3 class="text">Carrito</h3>
+            </div>
+            <div class="categories">
+                <h3>Producto</h3>
+                <h3>Unidades</h3>
+                <h3>Precio</h3>
+                <h3>Cuotas</h3>
+            </div>
+
+            <div class="products">
+                <h4>Notebook XPG Xenia</h4>
+                <h4>1</h4>
+                <h4>$300</h4>
+                <h4>En 3x $100 s/ interés</h4>
+
+            </div>
+            
+        
+           
         </section>
 
-        <section class="main-purchase-rest-content">
-            <ul class="main-purchase-bottom-content-1">
-                <li>
-                    <p>Producto</p>
-                </li>
-                <li>
-                    <p>Unidades</p>
-                </li>
-                <li>
-                    <p>Precio</p>
-                </li>
-                <li>
-                    <p>Cuotas</p>
-                </li>
-            </ul>
+        <section class="right__content">
+            
+            <div class="detail">
+                <h3 class="text" > Detalle de compra </h3>
+            </div>
+           
+            <div class="resume">
 
-            <section class="main-purchase-bottom-content-2">
-                <div class="campo-calculos">
-                    <h4>
-                        Monto total:
-                    </h4>
-                </div>
-                <div class="campo-calculos">
-                    <h4>
-                        Unidades:
-                    </h4>
+                <div class="resume__container">
+                   <div class="resume__detail">
+                    <h5 class="resume__detail--text1">Monto Tolal:  </h5>
+                    <h5 class="resume__detail--text2"> $300</h5>
+                   </div> 
+                    <div class="resume__detail">
+                        <h5 class="resume__detail--text1">Unidades:  </h5>
+                        <h5 class="resume__detail--text2">1</h5>
+                    </div>
                 </div>
 
-                <div class="campo-navegacion">
-                    <h4>
-                        Finalizar compra
-                    </h4>
-                </div>
-                <div class="campo-navegacion">
-                    <h4>
-                        Seguir navegando
-                    </h4>
-                </div>
+                <form class="resume__form" action="">
+                    <button> Finalizar compra</button> 
+                    <button> Seguir comprando</button> 
+                </form>
 
-            </section>
+            </div>
+
         </section>
     </section>
     

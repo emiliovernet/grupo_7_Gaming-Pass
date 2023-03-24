@@ -5,9 +5,9 @@ const methodOverride = require("method-override");
 const session = require("express-session")
 
 
-const usuarioLogueadoMiddleware = require("./Middlewares/usuarioLogueado");
+// // const usuarioLogueadoMiddleware = require("./Middlewares/usuarioLogueado");
 
-app.use(usuarioLogueadoMiddleware);
+// app.use(usuarioLogueadoMiddleware);
 
 const productsRouter = require('./routers/products');
 const usersRouter = require('./routers/users');

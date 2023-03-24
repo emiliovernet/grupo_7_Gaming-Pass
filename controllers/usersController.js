@@ -21,10 +21,10 @@ const controller = {
             
             if(contraseñaOk){
                 req.session.usuarioLogueado = usuarioLogin;
-                res.redirect("/");
+               return res.redirect("/");
             }
             
-            res.render("login", {
+            return res.render("login", {
                errors: {
                    email: {
                        msg: "Email o contraseña incorrecto"
