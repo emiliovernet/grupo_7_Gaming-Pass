@@ -3,9 +3,9 @@ const router = express.Router();
 
 
 const usersController = require('../controllers/usersController.js')
-const multer = require('../Middlewares/multer')
-const validaciones = require('../Middlewares/validacionRegister.js')
-const huespedMiddleware = require('../Middlewares/huesped.js')
+const multer = require('../middlewares/multer')
+const validaciones = require('../middlewares/validacionRegister.js')
+const huespedMiddleware = require('../middlewares/huesped.js')
 
 
 

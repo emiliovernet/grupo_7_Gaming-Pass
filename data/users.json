@@ -82,16 +82,58 @@
  },
  {
   "id": 10,
-  "nombre": "Agus",
+  "name": "Agus",
   "email": "agus.granda@gmail.com",
   "password": "$2a$10$PVO4GPuGqXJHBaRho.Ya6OO1aJ24OIu8lbTcK/V8Ji0J9EKCj1AQy",
   "avatar": "1678044149327_img.png"
  },
  {
   "id": 11,
-  "nombre": "qweqweqwe",
-  "email": "asdasd@gmail.com",
-  "password": "$2a$10$Q3g42yf5CBrH5uduWOwls.DiwVQ9ZekxB4ldOea9dXB4/1miKQcce",
-  "avatar": "1678149970908_img.png"
+  "name": "Emilio Vernet",
+  "email": "vernetemilio@gmail.com",
+  "password": "$2a$10$OdzjH7WlVVvIoXh8vOvhQ.vki6..lQAdPowVKSwY/GmST2GUsylom",
+  "avatar": "1678217776744_img.png"
+ },
+ {
+  "id": 12,
+  "name": "Juan",
+  "email": "mabona4303@seinfaq.com",
+  "password": "$2a$10$vdzuU.8ZL2DAkPwusFKPY.vwgQ9juvS3Kwv5vsMXU7./riAE.OMK6",
+  "avatar": "1678220358015_img.png"
+ },
+ {
+  "id": 13,
+  "name": "Juan",
+  "email": "wiyowij726@charav.com",
+  "password": "$2a$10$U1N7hF0lmz0E0ddyqz2v4OEnSkEAtuwSwkI4MB/2q7JTMrh2SYJzm",
+  "avatar": "1678220936150_img.png"
+ },
+ {
+  "id": 14,
+  "name": "Emilio",
+  "email": "mabona4303@seinfaq.com",
+  "password": "$2a$10$LzXgPbFITvYOyH9YEb1xXeQk1oM5v2Hu3k/191qwVacpsX98Tzmi6",
+  "avatar": "1678221586318_img.png"
+ },
+ {
+  "id": 15,
+  "name": "ñlkj",
+  "email": "wiyowij726@charav.com",
+  "password": "$2a$10$ljoVMIY4HeN5K..gfCl6veflLYI6HV/wz.JgD8DI.qqF1gqcbYHIa",
+  "avatar": "1678221891443_img.png"
+ },
+ {
+  "id": 16,
+  "name": "Juan",
+  "email": "mabona4303@seinfaq.com",
+  "password": "$2a$10$9gkN1ZKRuZRGa7sT2hkPvOzV2PvDh0Ogpo5Eq3sQdFkFtKYnKdHKm",
+  "avatar": "1678222132573_img.png"
+ },
+ {
+  "id": 17,
+  "name": "Cafetera Moulinex Dolce Gusto",
+  "email": "emilio_vernet@hotmail.com",
+  "password": "$2a$10$susqTH4nW.lN5KpHEH6mY.OXrgcl8laXzciRBCnwaTIlYVGGnyE.m",
+  "avatar": "1678277307444_img.png"
  }
 ]

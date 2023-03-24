@@ -1,6 +1,6 @@
 function adminMiddleware (req,res,next){
 
-    if(!req.session.usuarioLogueado.type == "Admin"){
+    if(!req.session.userLogged.type == "Admin"){
         res.render("/")
     }
     next(); 

@@ -7,7 +7,7 @@ const {body} = require("express-validator");
 
 
 const validaciones = [
-    body("nombre").notEmpty().withMessage('Nombre requerido'),
+    body("name").notEmpty().withMessage('Nombre requerido'),
     body("email").notEmpty().withMessage('Email requerido').bail().isEmail().withMessage("Formato de Email invalido"),
     body("password").notEmpty().withMessage('Contraseña requerida'),
     body("avatar").custom((value, { req }) => {

@@ -14,14 +14,14 @@ const controller = {
         res.render('login')
     },
     procesarLogin:(req,res)=>{
-        let usuarioLogin = users.find((usuario) => usuario.email == req.body.email);
+        let userToLogin = users.find((usuario) => usuario.email == req.body.email);
         
-        if(usuarioLogin){
-            let contraseñaOk = bcryptjs.compareSync(req.body.password, usuarioLogin.password);
+        if(userToLogin){
+            let contraseñaOk = bcryptjs.compareSync(req.body.password, userToLogin.password);
             
             if(contraseñaOk){
-                req.session.usuarioLogueado = usuarioLogin;
-               return res.redirect("/");
+                req.session.userLogged = userToLogin;
+                return res.redirect('/');
             }
             
             return res.render("login", {
@@ -68,7 +68,7 @@ const controller = {
               };
             users.push(nuevoUsuario);
         fs.writeFileSync(usersFilePath, JSON.stringify(users, null, ' '));
-        res.redirect('/')
+        res.redirect('/users/login')
     },
     logout:(req,res) => {
         req.session.destroy();
