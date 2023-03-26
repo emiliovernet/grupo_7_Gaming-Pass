@@ -1,6 +1,6 @@
 function huespedMiddleware (req,res,next){
-    if(req.session.usuarioLogueado){
-        res.redirect("/");
+    if(req.session.userLogged){
+       return res.redirect("/");
     }
     next();
 }

@@ -64,15 +64,16 @@ const controller = {
         id: users[users.length - 1].id + 1,
         ...req.body,
         password: bcryptjs.hashSync(req.body.password , 10),
-        avatar: req.file.filename,
+        type:"Customer",
+        avatar: req.file.filename
               };
             users.push(nuevoUsuario);
         fs.writeFileSync(usersFilePath, JSON.stringify(users, null, ' '));
-        res.redirect('/users/login')
+        res.redirect('/')
     },
     logout:(req,res) => {
         req.session.destroy();
-        res.redirect("/");
+        return res.redirect("/");
     }
 
 

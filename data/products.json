@@ -17,15 +17,15 @@
   "category": "notebook",
   "description": "Notebook XPG Xenia 15.6 Core I7 1165G7 16GB (2x8GB) 4266Mhz 1TB SSD NVMe W10H Silver"
  },
- {
-  "id": 3,
-  "name": "Notebook Asus Vivobook M3500",
-  "image": "IMG-NOTEBOOK3.JPG",
-  "price": 260,
-  "discount": 10,
-  "category": "notebook",
-  "description": "Notebook Asus Vivobook M3500 15.6 Ryzen 5 5600H 8GB 512GB SSD NVMe W11 Home"
- },
+ { 
+    "id": 3,
+    "name": "Notebook Asus Vivobook M3500",
+    "image":"IMG-NOTEBOOK3.JPG" ,
+    "price": 260.000,
+    "discount":10,
+    "category": "notebook",
+    "description": "Notebook Asus Vivobook M3500 15.6 Ryzen 5 5600H 8GB 512GB SSD NVMe W11 Home" 
+},
  {
   "id": 4,
   "name": "Notebook Dell Inspiron 3511",

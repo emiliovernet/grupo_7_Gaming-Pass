@@ -58,6 +58,7 @@ header a {
 .main__container{
   background-color: #E5E7E9;
   display: flex;
+  margin: auto;
   height: 65vh;
   padding: 40px;
 
