@@ -1,0 +1,30 @@
+                <header>
+            <div class="header-top-bar">
+                <a href="/"><img src="/images/IMG-LOGO.png" alt="Logo de GAMING PASS" class="logo" /></a>
+                <div class="form">
+                    <input class="input" name="busqueda" placeholder="Búsqueda">
+                    <label class="icon" for="busqueda"><i class="fa fa-search"></i></label>
+                </div>
+                <div class="nav-header">
+                    <ul>
+                        <% if (locals.isLogged) { %>
+                            <li><img src="/images/avatars/<%= locals.userLogged.avatar %>" width="40" style="border-radius: 100%;"></li>
+                            <li><a href="/users/logout"><i class="fa fa-user"></i></a></li>
+                            <li><a href="/productCart"><i class="fa fa-shopping-cart"></i></a></li>
+                            <li><a href="/create">Registrar producto</a></li>
+                            
+                        <% }else{ %>
+                            <li><a href="/users/login"><img src="/images/avatars/default-avatar.png" width="70" style="border-radius: 100%;" ></a></li>
+                        <% } %>
+                    </ul>
+                </div>
+            </div>
+            <nav class="header-bottom-bar">
+                <ul>
+                    <li><a href="#">Asus</a></li>
+                    <li><a href="#">Acer</a></li>
+                    <li><a href="#">Dell</a></li>
+                    <li><a href="#">Samsung</a></li>
+                </ul>
+            </nav>
+        </header>
