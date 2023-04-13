@@ -14,18 +14,13 @@ module.exports = {
     */
     await queryInterface.bulkInsert('products', [
       {
-        name: "Notebook ASUS"
-      },
-      {
-        price: "35000"
-      },
-      {
-        discount: "30"
-      },
-      {
-        description: "Notebook ASUS Memoria ram 6gb"
+        name: "Notebook ASUS",
+        price: "35000",
+        discount: "30",
+        description: "Notebook ASUS Memoria ram 6gb",
+        product_categories_id: "1"
       }
-
+      
     ], {});
   },
 

@@ -14,15 +14,9 @@ module.exports = {
     */
     await queryInterface.bulkInsert('users', [
       {
-        name: "Agustin"
-      },
-      {
-        email: "agustin.granda@gmail.com" 
-      },
-      {
-        password: "1234"
-      },
-      {
+        name: "Agustin",
+        email: "agustin.granda@gmail.com",
+        password: "1234",
         avatar: "1679787879727_img.jpg"
       }
     ], {});

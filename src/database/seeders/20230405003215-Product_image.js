@@ -14,7 +14,9 @@ module.exports = {
     */
     await queryInterface.bulkInsert('product_images', [
        {
-         name: "IMG-NOTEBOOK1.JPG"
+         name: "IMG-NOTEBOOK1.JPG",
+         products_id: "1"
+
        }
       ], {});
   },

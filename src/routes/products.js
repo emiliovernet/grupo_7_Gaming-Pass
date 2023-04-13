@@ -7,7 +7,7 @@ const userNotLogged = require('../Middlewares/userNotLogged.js')
 
 
 // Productos
-router.post('/productForm', productsController.store);
+router.post('/productForm', productsController.new);
 router.put('/:id', productsController.update); 
 router.get('/:id/edit',userNotLogged,adminMiddleware, productsController.edit); 
 router.delete('/:id',userNotLogged,adminMiddleware, productsController.destroy); 

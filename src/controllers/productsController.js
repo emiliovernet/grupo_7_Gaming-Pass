@@ -1,64 +1,83 @@
 const path = require('path')
-const fs = require('fs')
+const {Op} = require("sequelize");
 
-const productsFilePath = path.join(__dirname, '../data/products.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+const db = require("../database/models");
 
 const controller = {
     
-    home: (req, res) => {
-        res.render('home', {
-			products
-		});
+    home: async (req, res) => {
+		try{
+            const products = await db.Product.findAll({
+                include:["images"]
+            });
+            console.log(products.product_image)
+            res.render("home", { products } );
+       }catch(error){
+            res.send ({error})
+	   }
     },
-
-    store: (req, res) => {
+    new: async (req, res) => {
 		const newProduct = {
-			id: products[products.length - 1].id + 1,
 			image: 'default-image.png',
 			...req.body
 		};
-		products.push(newProduct);
-		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' '));
-		res.redirect('/')
+		try{
+            await db.product.create(newProduct);
+            res.redirect("/");
+        }catch(error){
+            res.send({error})
+        }
     },
-	productDetail: (req, res) => {
-		const { id } = req.params;
-		const product = products.find((product) => product.id == id);
-		res.render('productDetail', { product });
-	},
+	productDetail: async (req, res) => {
+		try{
+            const product = await db.Product.findByPk(req.params.id);
+            res.render("productDetail" , {product});
+            
+        }catch(error){
+             res.send ({error})
+        } 
+    },
     productCart: (req, res) => {
         res.render('productCart')
     },
     productCreate: (req,res)=>{
         res.render("productForm")
     },
-    edit: (req, res) => {
-		const productToEdit = products.find((product) => product.id == req.params.id);
-		res.render('productEditForm', {productToEdit})
+    edit: async (req, res) => {
+		try{
+            const product = await db.Product.findByPk(req.params.id);
+            res.render("productEditForm",{Product:product});
+        }catch(error){
+            res.send({error});
+        }
+    },
+    update: async (req, res) => {
+		try{
+            const newProduct = {
+				image: 'default-image.png',
+				...req.body
+				}
+            await db.Product.update(product, 
+                {
+                    where:{
+                        id: req.params.id
+                    }
+                })
+            return res.redirect("/");
+        }catch(error){
+            return res.send({error});
+        }
+		
+		
 	},
-    update: (req, res) => {
-		let indexToEdit;
-		let productToEdit = products.find((product, index) => {
-			if (product.id == req.params.id) {
-				indexToEdit = index;
-				return true;
-			}
-			return false;
-		});
-		productToEdit = {
-			...productToEdit,
-			...req.body
-		};
-		products[indexToEdit]= productToEdit;
-		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' '));
-		res.redirect('/');
-	},
-    destroy: (req, res) => {
-		let productsFiltered = products.filter((product) => product.id != req.params.id);
-		fs.writeFileSync(productsFilePath, JSON.stringify(productsFiltered, null, ' '));
-		res.redirect('/');
+    destroy: async (req, res) => {
+		try{
+            await db.Product.destroy({where: { id: req.params.id}});
+            res.redirect ("/movies ")
+        }catch(error){
+            res.send({error})
+        }
 	}
-};
+}
 
 module.exports = controller;

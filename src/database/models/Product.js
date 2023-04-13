@@ -2,7 +2,9 @@ module.exports = (sequelize, dataTypes) => {
     let alias = 'Product';
     let cols = {
         id: {
-            type: dataTypes.INTEGER
+            type: dataTypes.INTEGER,
+            autoIncrement: true,
+            primaryKey: true
           },
           name: {
             type: dataTypes.TEXT,
@@ -21,7 +23,7 @@ module.exports = (sequelize, dataTypes) => {
           product_categories_id: {
             type: dataTypes.INTEGER
           }
-}
+      }
     let config = {
         timestamps: false,
     }
@@ -31,7 +33,11 @@ module.exports = (sequelize, dataTypes) => {
       Product.belongsTo(models.Product_Category, {
             as: "product_category",
             foreignKey: "product_categories_id"
-        })
+        }),
+        Product.hasMany(models.Product_image, {
+          as: "images",
+          foreignKey: "products_id"
+      })
     }
 
     return Product

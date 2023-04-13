@@ -16,10 +16,11 @@
     <section class="Notebooks">
         <h3>Notebooks</h3>
         <div class="products">
+            
             <% products.forEach((product)=>{ %> 
-                <% if(product.category == "notebook") { %> 
+                <% if(product.product_categories_id == "1") { %> 
             <article>
-            <a href="/detail/<%= product.id %> "><img src="/images/<%= product.image %> " width="360px" alt="<%= product.description %> "></a>
+            <a href="/detail/<%= product.id %> "><img src="/images/<%= product.images %> " width="360px" alt="<%= product.description %> "></a>
                 <div class="main-article">
                     <i class="fas fa-truck truck-icon"></i>
                     <p class="price">$<%= product.price %> </p>
