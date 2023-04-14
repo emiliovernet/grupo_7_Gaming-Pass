@@ -1,4 +1,3 @@
-const path = require('path')
 const {Op} = require("sequelize");
 
 const db = require("../database/models");
@@ -10,7 +9,7 @@ const controller = {
             const products = await db.Product.findAll({
                 include:["images"]
             });
-            console.log(products.product_image)
+            // console.log(products.product_image)
             res.render("home", { products } );
        }catch(error){
             res.send ({error})
@@ -22,7 +21,7 @@ const controller = {
 			...req.body
 		};
 		try{
-            await db.product.create(newProduct);
+            await db.Product.create(newProduct);
             res.redirect("/");
         }catch(error){
             res.send({error})
