@@ -11,9 +11,34 @@ const controller = {
     procesarLogin: async (req,res)=>{
     
         try{
-                const cliente = await db.User.FindOne({
+                const client = await db.User.findOne({
                 where:{
                     email: req.body.email
+                }
+            })
+            if(client){
+                let contraseñaOk = bcryptjs.compareSync(req.body.password, client.password);
+                
+                if(contraseñaOk){
+                    req.session.userLogged = client;
+                    return res.redirect('/');
+                }
+                
+                return res.render("login", {
+                   errors: {
+                       email: {
+                           msg: "Email o contraseña incorrecto"
+                       }
+                   }
+               })
+                
+             }
+    
+            return res.render("login", {
+                errors: {
+                    email: {
+                        msg: "Email o contraseña incorrecto"
+                    }
                 }
             })
             
@@ -21,33 +46,6 @@ const controller = {
         catch(error){
             res.send("no lo encontre!")
         }
-        // if(userToLogin){
-        //     let contraseñaOk = bcryptjs.compareSync(req.body.password, userToLogin.password);
-            
-        //     if(contraseñaOk){
-        //         req.session.userLogged = userToLogin;
-        //         return res.redirect('/');
-        //     }
-            
-        //     return res.render("login", {
-        //        errors: {
-        //            email: {
-        //                msg: "Email o contraseña incorrecto"
-        //            }
-        //        }
-        //    })
-            
-        //  }
-
-        // return res.render("login", {
-        //     errors: {
-        //         email: {
-        //             msg: "Email o contraseña incorrecto"
-        //         }
-        //     }
-        // })
-
-
     },
     
     register: (req, res) => {

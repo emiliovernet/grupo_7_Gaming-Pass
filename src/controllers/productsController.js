@@ -9,20 +9,22 @@ const controller = {
             const products = await db.Product.findAll({
                 include:["images"]
             });
-            // console.log(products.product_image)
             res.render("home", { products } );
+
        }catch(error){
             res.send ({error})
 	   }
     },
     new: async (req, res) => {
 		const newProduct = {
-			image: 'default-image.png',
 			...req.body
 		};
 		try{
-            await db.Product.create(newProduct);
+            
+            const productCreated = await db.Product.create(newProduct);
+            await db.Product_image.create({products_id : productCreated.id, name : req.file ? req.file.filename :'default-image.png'})
             res.redirect("/");
+
         }catch(error){
             res.send({error})
         }
@@ -39,8 +41,9 @@ const controller = {
     productCart: (req, res) => {
         res.render('productCart')
     },
-    productCreate: (req,res)=>{
-        res.render("productForm")
+    productCreate: async(req,res)=>{
+        const categories = await db.Product_Category.findAll();
+        res.render("productForm",{categories});
     },
     edit: async (req, res) => {
 		try{

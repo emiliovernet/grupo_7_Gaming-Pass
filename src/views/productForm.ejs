@@ -10,7 +10,7 @@
             <h3>Crea un nuevo producto</h3>
         </div>
 
-        <div class="formulario">
+        <div class="formulario" >
             <form action="/productForm" method="POST">
                 <div>
                     <label for="name">name de Producto:</label> <br>
@@ -26,10 +26,10 @@
                 </div>
                 <div>
                     <label for="category">Categoría:</label>
-                    <select id="category" name="category">
-                        <option value="notebook">Notebook</option>
-                        <option value="monitor">Monitor</option>
-                        <option value="memory">Memoria</option>
+                    <select id="category" name="product_categories_id">
+                        <% categories.forEach(category => { %>
+                            <option value="<%= category.id %>"><%= category.name %></option>
+                        <% }) %>
                     </select>
                 </div>
 

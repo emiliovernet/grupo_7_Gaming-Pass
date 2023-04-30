@@ -5,7 +5,7 @@ const methodOverride = require("method-override");
 const path = require('path');
 
 
-const userLoggedMiddleware = require('./Middlewares/userLogged.js')
+const userLoggedMiddleware = require('./Middlewares/userLogged')
 const productsRouter = require('./routes/products');
 const usersRouter = require('./routes/users');
 
