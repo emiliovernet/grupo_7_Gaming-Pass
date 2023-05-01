@@ -15,7 +15,9 @@ const controller = {
                 where:{
                     email: req.body.email
                 }
+                
             })
+            console.log(client);
             if(client){
                 let contraseñaOk = bcryptjs.compareSync(req.body.password, client.password);
                 

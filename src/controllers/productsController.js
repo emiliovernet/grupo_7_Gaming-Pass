@@ -1,5 +1,5 @@
 const {Op} = require("sequelize");
-
+const { validationResult } = require("express-validator");
 const db = require("../database/models");
 
 const controller = {
@@ -16,13 +16,23 @@ const controller = {
 	   }
     },
     new: async (req, res) => {
+        const resultadosDeValidacion = validationResult(req);
+       
+       if (resultadosDeValidacion.errors.length > 0) {
+           return res.render("productForm", {
+                errors: resultadosDeValidacion.mapped(),
+                oldData: req.body
+            });
+       }
 		const newProduct = {
 			...req.body
 		};
 		try{
-            
             const productCreated = await db.Product.create(newProduct);
-            await db.Product_image.create({products_id : productCreated.id, name : req.file ? req.file.filename :'default-image.png'})
+            await db.Product_image.create({
+                products_id : productCreated.id,
+                name : req.file })
+                // ? req.file.filename :'default-image.png'
             res.redirect("/");
 
         }catch(error){
@@ -31,7 +41,10 @@ const controller = {
     },
 	productDetail: async (req, res) => {
 		try{
-            const product = await db.Product.findByPk(req.params.id);
+            const product = await db.Product.findByPk(req.params.id, {
+                include:["images"]
+            });
+            // res.send(product)
             res.render("productDetail" , {product});
             
         }catch(error){
@@ -41,7 +54,7 @@ const controller = {
     productCart: (req, res) => {
         res.render('productCart')
     },
-    productCreate: async(req,res)=>{
+    productCreate: async (req,res)=>{
         const categories = await db.Product_Category.findAll();
         res.render("productForm",{categories});
     },

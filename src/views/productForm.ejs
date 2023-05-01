@@ -13,16 +13,31 @@
         <div class="formulario" >
             <form action="/productForm" method="POST">
                 <div>
-                    <label for="name">name de Producto:</label> <br>
-                    <input type="text" name="name" id="name">
+                    <label for="name">Nombre del Producto:</label> <br>
+                    <input type="text" name="name" id="name" value="<%= locals.oldData ? oldData.name : null %>">
+                    <% if (locals.errors && errors.name) { %>
+                        <div class="error-msj">
+                      <%= errors.name.msg %>
+                        </div>
+                    <% } %>
                 </div>
                 <div>
                     <label for="price">Precio del producto:</label> <br>
-                    <input type="text" name="price" id="price">
+                    <input type="number" name="price" id="price" value="<%= locals.oldData ? oldData.price : null %>">
+                    <% if (locals.errors && errors.price) { %>
+                        <div class="error-msj">
+                      <%= errors.price.msg %>
+                        </div>
+                    <% } %>
                 </div>
                 <div>
                     <label for="discount">Descuento:</label> <br>
-                    <input type="number" name="discount" id="discount">
+                    <input type="number" name="discount" id="discount" value="<%= locals.oldData ? oldData.discount : null %>">
+                    <% if (locals.errors && errors.discount) { %>
+                        <div class="error-msj">
+                      <%= errors.discount.msg %>
+                        </div>
+                    <% } %>
                 </div>
                 <div>
                     <label for="category">Categoría:</label>
@@ -35,7 +50,20 @@
 
                 <div>
                     <label for="description">Descripcion:</label> <br>
-                    <textarea name="description" id="description"></textarea>
+                    <textarea name="description" id="description" value="<%= locals.oldData ? oldData.description : null %>"></textarea>
+                    <% if (locals.errors && errors.description) { %>
+                        <div class="error-msj">
+                      <%= errors.description.msg %>
+                        </div>
+                    <% } %>
+                </div>
+                <div class="image">
+                    <input type="file" name="image" id="image" value="<%= locals.oldData ? oldData.image : null %>">
+                    <% if (locals.errors && errors.image) { %>
+                        <div class="error-msj">
+                      <%= errors.image.msg %>
+                        </div>
+                    <% } %>
                 </div>
                 <div class="boton">
                     <button class="boton" type="submit">Guardar</button>

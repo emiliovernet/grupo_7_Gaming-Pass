@@ -9,7 +9,7 @@
 
     <main>
         <section class="producto">
-                <img class="imagen-producto" src="/images/<%= product.image %> " alt="<%= product.description %> ">
+                <img class="imagen-producto" src="/images/<%= product.images[0].name%> " alt="<%= product.description %> ">
             <article class="estado-producto">
                 <h2 class="name-producto"><%= product.name %></h2>
                 <p class="disponiblidad">10 unidades disponibles</p>
@@ -38,7 +38,7 @@
             </article>
         </section>
         <section class="botones">
-            <a href="/<%= product.id %>/edit" class="action-button edit">EDITAR PRODUCTO</a>
+            <a href="/<%= product.id %>/edit" class="action-button edit"><button>EDITAR PRODUCTO</button></a>
 						<form action="/<%= product.id %>?_method=DELETE " method="POST">
 							<button type="submit" class="action-button delete">ELIMINAR</button>
 						</form>

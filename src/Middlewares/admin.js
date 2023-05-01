@@ -1,12 +1,13 @@
 function adminMiddleware (req,res,next){
 
-    if(!req.session.userLogged.type === "Admin"){
+    if(!req.session.userLogged.User.dataValues.roles_id == 1){
        return res.redirect("/");
     }
     next(); 
 }
 
-//Modificar
+// Modificar
+
 
 
 module.exports = adminMiddleware;

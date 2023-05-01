@@ -43,10 +43,10 @@ form{
 
 }
 
-.boton:hover{
+/* .boton:hover{
     -webkit-transform: scale(1);
     transform: scale(1.02);
-}
+} */
 
 input{
     padding: 8px;
@@ -59,10 +59,10 @@ input{
     transition: all 650ms
 }
 
-input:hover{
+/* input:hover{
     -webkit-transform: scale(1);
     transform: scale(1.02);
-}
+} */
 
 
 input:focus{

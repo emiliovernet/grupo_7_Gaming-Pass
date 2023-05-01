@@ -3,9 +3,10 @@ const router = express.Router();
 
 
 const usersController = require('../controllers/usersController.js')
-const multer = require('../middlewares/multer')
+const multer = require('../Middlewares/multer')
 const validaciones = require('../middlewares/validacionRegister.js')
 const emailValidator = require('../Middlewares/emailValidator.js')
+
 
 
 
