@@ -5,7 +5,7 @@ const {body} = require("express-validator");
 
 const validaciones = [
     body("name").notEmpty().withMessage('Nombre requerido'),
-    body("email").notEmpty().withMessage('Email requerido').bail().isEmail().withMessage("Formato de Email invalido"),
+    body("price").notEmpty().withMessage('Precio requerido').bail().isEmail().withMessage("Formato de Email invalido"),
     body("description").notEmpty().withMessage('Descripción requerida'),
     body("image").custom((value, { req }) => {
             let archivo = req.file;

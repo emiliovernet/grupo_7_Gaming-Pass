@@ -7,42 +7,63 @@
 
 <%- include('partials/header') %>
 
-    <main>
-        <section class="producto">
-                <img class="imagen-producto" src="/images/<%= product.images[0].name%> " alt="<%= product.description %> ">
-            <article class="estado-producto">
-                <h2 class="name-producto"><%= product.name %></h2>
-                <p class="disponiblidad">10 unidades disponibles</p>
-                <p class="envio">Envío gratis<i class="fas fa-truck truck-icon"></i></p>
-            </article>
+    <main class="estructura">
+        <section class="productMain">
+            <div class="image">
+                <img src="/images/<%= product.images[0].name%> " alt="<%= product.description %> ">
+            </div>
+            <div class="name">
+                <h1 class="productName"><%= product.name %> </h1>
+                <p>$<%= (product.price - (product.discount * product.price) / 100 ) %> </p>
+                <p>En 6 x $ <%= product.price / 6 %> </p>
+                <p class="subName">Stock disponible</p>
+                <p class="subName">Envío gratis <i class="fas fa-truck truck-icon"></i></p>
+                <button class="comprar" type="button">Comprar Ahora!</button>
+                <div class="buttons">
+                    <a href="/<%= product.id %>/edit" class="action-button edit"><button>EDITAR</button></a>
+                    <form action="/<%= product.id %>?_method=DELETE " method="POST">
+                        <button type="submit" class="action-button delete">ELIMINAR</button>
+                    </form>
+                </div>
+            </div>
         </section>
+
+        <hr class="hr1">
+
+        <section class="pagos">
+            <div class="pago1">
+                <div>
+                    <h3 class="precio">$<%= (product.price - (product.discount * product.price) / 100 ) %></h3>
+                    <p>Precio especial</p>
+                </div>
+                <div class="text">
+                    <p>Abonando en Efectivo o Transferencia Bancaria</p>
+                </div>
+            </div >
+            <hr class="hr2">
+            <div class="pago2">
+                <div >
+                    <h3 class="precio">$<%= product.price %></h3>
+                    <p>Precio normal</p>
+                </div>
+                <div class="text">
+                    <p>Abonando en tarjeta de Débito o Crédio</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="hr1">
+
         <section class="caracteristicas">
-            <article >
-                <h1>Caracteristicas</h1>
+            <div class="caracteristicasTitle">
+                <h3>Caracerisicas</h3>
                 <p><%= product.description %></p>
-                <!-- <p>-Idioma Del Teclado: Español</p>
-                <p>-Ram Integrada: 16 gb</p>
-                <p>-Color: Azul</p>
-                <p>-Peso: 1.57 kg</p>
-                <p>-Bluetooth: Si</p>
-                <p>-Puertos Hdmi: 1</p>
-                <P>Tipo De Gpu: Nvidia GeForce</P> -->
-            </article>
-            <article>
-                <h1>Precio</h1>
-                <p>$<%= product.price %></p>
-            </article>
-            <article>
-                <h1>Descuento</h1>
-                <p><%= product.discount %>%</p>
-            </article>
+            </div>
+            <div class="text">
+
+            </div>
         </section>
-        <section class="botones">
-            <a href="/<%= product.id %>/edit" class="action-button edit"><button>EDITAR PRODUCTO</button></a>
-						<form action="/<%= product.id %>?_method=DELETE " method="POST">
-							<button type="submit" class="action-button delete">ELIMINAR</button>
-						</form>
-        </section>
+      
     </main>
     
 <%- include('partials/footer') %>
