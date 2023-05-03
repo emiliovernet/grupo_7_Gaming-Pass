@@ -61,7 +61,7 @@ const controller = {
     edit: async (req, res) => {
 		try{
             const product = await db.Product.findByPk(req.params.id);
-            res.render("productEditForm",{Product:product});
+            res.render("productEditForm",{ product });
         }catch(error){
             res.send({error});
         }
@@ -88,7 +88,7 @@ const controller = {
     destroy: async (req, res) => {
 		try{
             await db.Product.destroy({where: { id: req.params.id}});
-            res.redirect ("/movies ")
+            res.redirect ("/")
         }catch(error){
             res.send({error})
         }

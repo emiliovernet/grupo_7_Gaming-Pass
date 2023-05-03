@@ -1,95 +1,16 @@
 * {
     margin: 0px;
     padding: 0px;
-  }
-  
-  header {
-    background-image: url("/images/IMG-BACKGROUND.JPG");
-    box-sizing: border-box;
-    margin: 0px;
-  }
-  
-  @keyframes grow {
-    0% {
-        transform: scale(0.5);
-    }
-   
-    100% {
-        transform: scale(1);
-    }
-  }
-  
-  header ul {
-    list-style: none;
-    margin: 0px;
-    padding: 0;
-    display: flex;
-  }
-  
-  header a {
-    text-decoration: none;
-    color: #A569BD;
-    display: inline-block;
-    padding: 5px 0;
-    font-size: 17px;
-    transition: all 650ms;
-  }
-  
-  header a:hover {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-  }
-  
-  .header-top-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .nav-header {
-    width: 31%;
-  }
-  
-  .nav-header ul {
-    display: flex;
-    text-align: center;
-  }
-  
-  .nav-header li {
-    margin: auto;
-  }
-  
-  .nav-header a {
-    font-size: 17px;
-  }
-  
-
-  .header-bottom-bar ul {
-    display: flex;
-    justify-content: space-around;
-    font-weight: bold;
-  }
-  body {
+}
+body {
     font-family: "Roboto", sans-serif;
-    background-color: #ebebeb;
-  }
-  .form .input {
-    background-color: #fff;
-    outline: none;
-    color: #666;
-    padding: 2px;
-    border-radius: 3px;
-  }
-  .form {
-    width: 100%;
-    margin-left: 5%;
-    margin-right: 5%;
-    transition: all 650ms;
-  }
+    background-color: #ece8e8;
+}
   
 .estructura{
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: #fff;
     justify-content: space-around;
     margin: auto; 
     margin-top: 2%;
@@ -146,7 +67,7 @@
   font-size: 18px;
 
 }
-button{
+.action-button{
   box-sizing: border-box;
   width: 95%;
   padding: 5px;
@@ -234,27 +155,4 @@ main p {
     padding: 2%;
   }
 } */
-footer {
-  background-image: url("/images/IMG-BACKGROUND.JPG");
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-    align-items: center;
-}
-footer .telefono:hover,
-.mail:hover:hover,
-.logo:hover {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-}
-.logo {
-  width: fit-content;
-  height: fit-content;
-}
 
-.telefono,
-.mail,
-.logo {
-  display: flex;
-  transition: all 650ms;
-}

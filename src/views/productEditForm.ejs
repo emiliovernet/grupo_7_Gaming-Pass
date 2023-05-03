@@ -10,15 +10,15 @@
     </div>
 
     <div class="formulario">
-        <form action="/<%= productToEdit.id %>?_method=PUT" method="POST">
+        <form action="/<%= product.id %>?_method=PUT" method="POST">
                 <div>
                     <label for="name">name de Producto:</label> <br>
-                    <input value="<%= productToEdit.name %>" type="text" id="name" name="name">
+                    <input value="<%= product.name %>" type="text" id="name" name="name">
 
                 </div>
                <div>
                 <label for="price">Precio del producto:</label> <br>
-                <input value="<%= productToEdit.price %>"type="text" id="price" name="price">
+                <input value="<%= product.price %>"type="text" id="price" name="price">
                </div>
                 <!-- <div>
                     <label for="marca" >Unidades:</label> <br>
@@ -27,7 +27,7 @@
                
                 <div>
                     <label for="description">Descipción:</label>
-                    <textarea name="description" id="description"><%= productToEdit.description %></textarea>
+                    <textarea name="description" id="description"><%= product.description %></textarea>
                 </div>
                 <div class="boton">
                     <button class="boton" type="submit">Guardar</button>

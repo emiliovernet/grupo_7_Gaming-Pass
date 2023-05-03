@@ -281,31 +281,7 @@ main section h3 {
   font-size: 19px;
 }
 
-footer {
-  background-image: url("/images/IMG-BACKGROUND.JPG");
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
 
-.logo {
-  width: fit-content;
-  height: fit-content;
-
-}
-
-.telefono,
-.mail, p, .logo {
-  display: flex;
-  transition: all 650ms;
-}
-
-footer .telefono:hover,
-.mail:hover, p:hover, .logo:hover {
-  -webkit-transform: scale(1.05);
-transform: scale(1.05);
-
-}
 
 @media (min-width: 361px) {
 

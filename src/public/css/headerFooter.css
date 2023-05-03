@@ -1,0 +1,151 @@
+/* header {
+  background-image: url("/images/IMG-BACKGROUND.JPG");
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+@keyframes grow {
+  0% {
+      transform: scale(0.5);
+  }
+ 
+  100% {
+      transform: scale(1);
+  }
+}
+
+header ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0;
+  display: flex;
+}
+
+header a {
+  text-decoration: none;
+  color: #A569BD;
+  display: inline-block;
+  padding: 5px 0;
+  font-size: 17px;
+  transition: all 650ms;
+}
+
+header a:hover {
+-webkit-transform: scale(1.05);
+transform: scale(1.05);
+}
+
+.header-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-header {
+  width: 31%;
+}
+
+.nav-header ul {
+  display: flex;
+  text-align: center;
+}
+
+.nav-header li {
+  margin: auto;
+}
+
+.nav-header a {
+  font-size: 17px;
+}
+
+
+.header-bottom-bar ul {
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+}
+
+.form .input {
+  background-color: #fff;
+  outline: none;
+  color: #666;
+  padding: 2px;
+  border-radius: 3px;
+}
+.form {
+  width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+  transition: all 650ms;
+} */
+
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    height: 25vh;
+    background-color: #b6b3b3;
+    font-family: 'Inter', sans-serif;
+    align-items: center;
+    font-size: 19px;
+    
+}
+
+.imageFooter{
+    display: flex;
+    background-color: #464646;
+    width: 24%;
+    height: 100%;
+    justify-content: center;
+   
+}
+.help{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 70%;
+    font-size: 17px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.work{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+}
+.workButton{
+  padding: 5px;
+  margin: 3px;
+  background-color: #464646;
+  border: 2px solid #464646;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 17px;
+}
+
+.follow{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 40%;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.iconsFollow{
+    display: flex;
+    width: 35%;
+    font-size: 30px;
+    justify-content: space-around;
+}
+.iconsFollow:hover{
+  cursor: pointer;
+}
+
+.hrF{
+    color: #fff;
+    height: 50%;
+    margin: auto;
+
+}
