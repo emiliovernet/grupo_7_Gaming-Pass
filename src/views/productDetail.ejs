@@ -16,10 +16,10 @@
             <div class="name">
                 <h1 class="productName"><%= product.name %> </h1>
                 <p>$<%= (product.price - (product.discount * product.price) / 100 ) %> </p>
-                <p>En 6 x $ <%= product.price / 6 %> </p>
+                <p>En 6 x $ <%= Math.round(product.price / 6) %> </p>
                 <p class="subName">Stock disponible</p>
                 <p class="subName">Envío gratis <i class="fas fa-truck truck-icon"></i></p>
-                <button class="comprar" type="button">Comprar Ahora!</button>
+                <button class="comprar" type="button">¡Comprar Ahora!</button>
                 <div class="buttons">
                     <a href="/<%= product.id %>/edit"><button class="action-button">EDITAR</button></a>
                     <form action="/<%= product.id %>?_method=DELETE " method="POST">
