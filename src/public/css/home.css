@@ -124,10 +124,10 @@ article div.main-article {
   font-size: 16px;
   font-weight: normal;
 }
-
+/*
 h3 {
   color: #666;
-}
+}*/
 
 .description {
   display: none;
@@ -233,54 +233,43 @@ main section h3 {
   margin: 20px 0px;
 }
 
-.beneficies {
-  background-color: rgb(151, 151, 151);;
-  width: 100%;
-  /* transition: all 650ms; */
-}
-
-/* .beneficies:hover {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-  background-color: rgb(124, 124, 124);
-} */
-
 .fa-truck-moving, .fa-credit-card{
   align-self: center;
   border: 1.5px solid #b97ceb;
 }
 
-.items {
+.productTitle{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
+  justify-content: center;
+  background-image: url("../images/productTitle2.jpg");
+  color:rgb(223, 223, 223);
+  padding: 1%;
 }
 
-.item1, .item2 {
+.beneficies {
   box-sizing: border-box;
-  height: 110px;
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-  align-self: center;
-  background-color: rgb(255, 255, 255);
-  transition: all 650ms;
+  background-color: rgb(214, 213, 213);;
+  width: 100%;
+  padding: 2%;
+  justify-content: space-around;
+  align-items:center;
 }
 
-.item1:hover, .item2:hover {
-  background-color: rgb(87, 87, 87);;
-  color:#ebebeb
+.items{
+  display: flex;
+  width: 70%;
+}
+
+.item1, .item2, .item3{
+  margin: 2%;
 }
 
 .text {
   font-family: "Roboto", sans-serif;
-  color:#666;
-  position: absolute;
-  bottom: 40px;
-  font-size: 19px;
+  color:#949292;
+  bottom: 50px;
+  font-size: 16px;
 }
-
 
 
 @media (min-width: 361px) {
