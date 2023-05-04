@@ -247,28 +247,27 @@ main section h3 {
 }
 
 .beneficies {
-  box-sizing: border-box;
-  background-color: rgb(214, 213, 213);;
-  width: 100%;
-  padding: 2%;
-  justify-content: space-around;
-  align-items:center;
+  background-color: rgb(124, 124, 124);
+  justify-content: center;
 }
 
 .items{
+  width: 100%;
   display: flex;
-  width: 70%;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.item1, .item2, .item3{
-  margin: 2%;
+.beneficies article{
+margin: 3%;
 }
 
 .text {
   font-family: "Roboto", sans-serif;
-  color:#949292;
+  color:#5c5c5c;
   bottom: 50px;
   font-size: 16px;
+  text-align: center;
 }
 
 
