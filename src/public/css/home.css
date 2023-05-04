@@ -233,7 +233,7 @@ main section h3 {
   margin: 20px 0px;
 }
 
-.fa-truck-moving, .fa-credit-card{
+.fa-truck-moving, .fa-credit-card, .fa-sack-dollar, .fa-money-bill-transfer{
   align-self: center;
   border: 1.5px solid #b97ceb;
 }
@@ -247,7 +247,7 @@ main section h3 {
 }
 
 .beneficies {
-  background-color: rgb(124, 124, 124);
+  background-color: rgb(104, 103, 103);
   justify-content: center;
 }
 
