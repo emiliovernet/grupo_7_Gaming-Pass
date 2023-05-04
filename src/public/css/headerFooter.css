@@ -1,4 +1,4 @@
-/* header {
+header {
   background-image: url("/images/IMG-BACKGROUND.JPG");
   box-sizing: border-box;
   margin: 0px;
@@ -76,7 +76,7 @@ transform: scale(1.05);
   margin-left: 5%;
   margin-right: 5%;
   transition: all 650ms;
-} */
+}
 
 
 footer{
