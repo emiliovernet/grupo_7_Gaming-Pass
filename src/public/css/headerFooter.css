@@ -23,7 +23,7 @@ header ul {
 
 header a {
   text-decoration: none;
-  color: #A569BD;
+  color: #dad9d9;
   display: inline-block;
   padding: 5px 0;
   font-size: 17px;
@@ -62,6 +62,8 @@ transform: scale(1.05);
   display: flex;
   justify-content: space-around;
   font-weight: bold;
+  background-color: #3e2774;
+  margin-bottom: 1%
 }
 
 .form .input {
