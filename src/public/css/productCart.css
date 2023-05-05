@@ -3,58 +3,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-header {
-  background-image: url("/images/IMG-BACKGROUND.JPG");
-  box-sizing: border-box;
-  margin: 0px;
-  height: 16vh;
- 
-}
-header ul {
-  list-style: none;
-  margin: 0px;
-  padding: 0;
-  display: flex;
-}
-
-header a {
-  text-decoration: none;
-  color: #A569BD;
-  display: inline-block;
-  padding: 5px 0;
-  font-size: 17px;
-  transition: all 650ms;
-}
-.header-top-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.nav-header {
-  width: 31%;
-}
-
-.nav-header ul {
-  display: flex;
-  text-align: center;
-}
-
-.nav-header li {
-  margin: auto;
-}
-
-.nav-header a {
-  font-size: 17px;
-}
-
-
-.header-bottom-bar ul {
-  display: flex;
-  justify-content: space-around;
-  font-weight: bold;
-}
-
-
 .main__container{
   background-color: #E5E7E9;
   display: flex;

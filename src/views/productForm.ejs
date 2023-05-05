@@ -42,7 +42,7 @@
                 <div>
                     <label for="category">Categoría:</label>
                     <select id="category" name="product_categories_id">
-                        <% category.forEach(category => { %>
+                        <% categories.forEach(category => { %>
                             <option value="<%= category.id %>"><%= category.name %></option>
                         <% }) %>
                     </select>
