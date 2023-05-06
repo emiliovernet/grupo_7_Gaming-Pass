@@ -15,7 +15,7 @@
     <main>
 
     <section class="Notebooks">
-        <h3>Notebooks</h3>
+        <h3 class="productTitle" >Notebooks</h3>
         <div class="products">
             
             <% products.forEach((product)=>{ %> 
@@ -37,7 +37,7 @@
 </section>
 
 <section class="Monitores">
-    <h3>Monitores</h3>
+    <h3 class="productTitle">Monitores</h3>
     <div class="products">
         <% products.forEach((product)=>{ %> 
             <% if(product.category == "monitor") { %> 
@@ -54,7 +54,7 @@
 </section>
 
 <section class="memory">
-    <h3>Memorias</h3>
+    <h3 class="productTitle">Memorias</h3>
     <div class="products">
         <% products.forEach((product)=>{ %> 
             <% if(product.category == "memory") { %> 
@@ -80,7 +80,7 @@
         <article>
             <div class="item1">
                 <i class='fa fa-truck-moving'></i>
-                <h4 class="text">Envios a todo el pais y garantias</h4>
+                <h4 class="text">Envios a todo el pais/envios al exterior</h4>
             </div>
         </article>
 
@@ -88,6 +88,20 @@
             <div class="item2">
                 <i class="fa fa-credit-card"></i>
                 <h4 class="text">Paga con todos los medios de pago</h4>
+            </div>
+        </article>
+
+        <article>
+            <div class="item3">
+                <i class="fa fa-money-bill-transfer"></i>
+                <h4 class="text">Garantia extendida y devoluciones</h4>
+            </div>
+        </article>
+
+        <article>
+            <div class="item4">
+                <i class="fa fa-sack-dollar"></i>
+                <h4 class="text">Ofertas y descuentos todas las semanas</h4>
             </div>
         </article>
     </div>
