@@ -80,3 +80,10 @@ textarea{
 textarea:focus{
     outline: solid 0.1px #7e41b3 ;
 }
+
+.error-msj{
+    color: #993618;
+    font-size: 13px;
+    font-family: 'arial', sans-serif;
+    text-align: left;
+}

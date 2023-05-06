@@ -1,30 +1,31 @@
-<%-include('partials/head') %> 
+<%-include('partials /head') %>
     <link rel="stylesheet" href="/css/productForm.css">
     <title>Editá tu Productos</title>
-</head>
-<body>
-    
+    </head>
 
-    <div class="titulo">
-        <h3>Editá tu producto</h3>
-    </div>
+    <body>
 
-    <div class="formulario">
-        <form action="/<%= product.id %>?_method=PUT" method="POST">
+
+        <div class="titulo">
+            <h3>Editá tu producto</h3>
+        </div>
+
+        <div class="formulario">
+            <form action="/<%= product.id %>?_method=PUT" method="POST">
                 <div>
                     <label for="name">name de Producto:</label> <br>
                     <input value="<%= product.name %>" type="text" id="name" name="name">
 
                 </div>
-               <div>
-                <label for="price">Precio del producto:</label> <br>
-                <input value="<%= product.price %>"type="text" id="price" name="price">
-               </div>
+                <div>
+                    <label for="price">Precio del producto:</label> <br>
+                    <input value="<%= product.price %>" type="text" id="price" name="price">
+                </div>
                 <!-- <div>
                     <label for="marca" >Unidades:</label> <br>
                     <input type="number" name="marca" id="marca">
                 </div> -->
-               
+
                 <div>
                     <label for="description">Descipción:</label>
                     <textarea name="description" id="description"><%= product.description %></textarea>
@@ -34,8 +35,9 @@
                 </div>
             </form>
 
-        
-    </div>
 
-</body>
-</html>
+        </div>
+
+    </body>
+
+    </html>
