@@ -11,10 +11,11 @@
         </div>
 
         <div class="formulario">
-            <form action="/productForm" method="POST">
+            <form action="/productForm" method="POST" id="form">
                 <div>
                     <label for="name">Nombre del Producto:</label> <br>
                     <input type="text" name="name" id="name" value="<%= locals.oldData ? oldData.name : null %>">
+                    <p class="error-message" id="error-name"></p>
                     <% if (locals.errors && errors.name) { %>
                         <div class="error-msj">
                             <%= errors.name.msg %>
@@ -24,6 +25,7 @@
                 <div>
                     <label for="price">Precio del producto:</label> <br>
                     <input type="number" name="price" id="price" value="<%= locals.oldData ? oldData.price : null %>">
+                    <p class="error-message" id="error-price"></p>
                     <% if (locals.errors && errors.price) { %>
                         <div class="error-msj">
                             <%= errors.price.msg %>
@@ -32,18 +34,20 @@
                 </div>
                 <div>
                     <label for="discount">Descuento:</label> <br>
-                    <input type="number" name="discount" id="discount"
-                        value="<%= locals.oldData ? oldData.discount : null %>">
+                    <input type="number" name="discount" id="discount" value="<%= locals.oldData ? oldData.discount : null %>">
+                        <p class="error-message" id="error-discount"></p>
                 </div>
                 <div>
                     <label for="category">Categoría:</label>
                     <select id="category" name="product_categories_id">
+                        <option value="">Seleccione una categoría</option>
                         <% categories.forEach(category=> { %>
                             <option value="<%= category.id %>">
                                 <%= category.name %>
                             </option>
                             <% }) %>
                     </select>
+                    <p class="error-message" id="error-category"></p>
                 </div>
 
                 <div>
@@ -55,6 +59,7 @@
                             <%= errors.description.msg %>
                         </div>
                         <% } %>
+                        <p class="error-message" id="error-description"></p>
                 </div>
                 <div class="image">
                     <input type="file" name="image" id="image" value="<%= locals.oldData ? oldData.image : null %>">
@@ -63,15 +68,16 @@
                             <%= errors.image.msg %>
                         </div>
                         <% } %>
+                        <p class="error-message" id="error-image"></p>
                 </div>
                 <div class="boton">
-                    <button class="boton" type="submit">Guardar</button>
+                    <button class="boton" id=button type="submit">Guardar</button>
                 </div>
             </form>
 
 
         </div>
-
+        <script src="/js/productFormValidation.js"></script>
     </body>
 
     </html>
