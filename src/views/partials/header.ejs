@@ -1,31 +1,26 @@
 <header>
     <div class="header-top-bar">
-        
+
         <a href="/" class="image-top-bar"><img src="/images/Logo.png" alt="Logo+GAMING-PASS" class="logo" /></a>
         <div class="search">
             <input class="input" name="busqueda" placeholder="Búsqueda">
-            <label class="icon" for="busqueda"><i class="fa fa-search"></i></label>
+
         </div>
         <div class="nav-header">
             <ul>
                 <% if (locals.isLogged) { %>
                     <li><img src="/images/avatars/<%= locals.userLogged.avatar %>" width="40"
                             style="border-radius: 100%;"></li>
-                    <li><a href="/users/logout"><i class="fa fa-user"></i></a></li>
+                    <hr>
                     <li><a href="/productCart"><i class="fa fa-shopping-cart"></i></a></li>
-                    <li><a href="/create">Registrar producto</a></li>
+                    <hr>
+                    <li><a href="/users/logout"><i class="fa-solid fa-right-from-bracket"></i></a></li>
+                    <hr>
+                    <li><a href="/create">Nuevo producto</a></li>
                     <% }else{ %>
-                        <li><a href="/users/login"><img src="/images/avatars/default-avatar.png" width="70"
-                                    style="border-radius: 100%;"></a></li>
+                    <li class="login-nav"><a href="/users/login"><img src="/images/avatars/default-avatar.png">Iniciar Sesión</a></li></a>
                         <% } %>
             </ul>
         </div>
     </div>
-    <nav class="header-bottom-bar">
-        <ul>
-            <li><a href="#">Monitores</a></li>
-            <li><a href="#">Notebooks</a></li>
-            <li><a href="#">Memorias</a></li>
-        </ul>
-    </nav>
 </header>

@@ -26,7 +26,8 @@ const controller = {
                     req.session.userLogged = {
                         id: client.id,
                         email: client.email,
-                        role:client.role.name
+                        role:client.role.name,
+                        avatar: client.avatar
                     };
 
                     return res.redirect('/');
