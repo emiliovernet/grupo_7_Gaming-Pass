@@ -27,9 +27,11 @@ header a {
 
 .search {
   display: flex;
-  width: 60%;
+  width: 65%;
   height: 70%;
+  padding-left: 3%;
   font-size: 17px;
+  margin: auto;
   align-items: center;
   justify-content: space-around;
 }
@@ -43,33 +45,59 @@ header a {
   border: 1px solid #b1afaf;
   border-radius: 6px;
 }
+.search .input:focus {
+  outline: solid 0.1px #7e41b3 ;
+}
 
 .nav-header {
   height: 50%;
-  width: 20%;
+  width: 23%;
 }
 
 .nav-header ul {
   display: flex;
   text-align: center;
+  height: 90%;
+  background-color: #464646;
+  border: 2px solid #5a2c83;
+  border-radius: 7px;
+  padding: 5px;
+  margin: 8px;
 }
-
-.nav-header li {
+.nav-header li{
+  margin: auto;
+}
+.nav-header li a {
+  margin: auto;
+  color: #fff;
+}
+hr{
+  height: 50%;
+  color: #fff;
   margin: auto;
 }
 
-.nav-header a {
-  font-size: 17px;
-}
-
-
-.header-bottom-bar ul {
+.login-nav {
   display: flex;
-  height: 35px;
-  justify-content: space-around;
-  font-weight: bold;
-  background-color: #b6b3b3;
+  width: 100%;
+  height: 100%;
 }
+
+.login-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.login-nav img {
+  height: 100%;
+}
+
 
 
 footer {

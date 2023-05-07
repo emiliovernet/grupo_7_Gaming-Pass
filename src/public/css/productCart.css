@@ -3,7 +3,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-.main__container{
+.main__container {
   background-color: #E5E7E9;
   display: flex;
   margin: auto;
@@ -12,104 +12,89 @@
 
 }
 
-.left__content{
-width: 70%;
-display: flex;
-flex-direction: column;
-margin: 1px;
-outline: solid 0.1px #7e41b3 ;
+.left__content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: 1px;
+  outline: solid 0.1px #7e41b3;
 }
 
-.cart{
+.cart {
   height: 10%;
   display: flex;
-  outline: solid 0.1px #7e41b3 ;
+  outline: solid 0.1px #7e41b3;
 }
 
-.categories{
+.categories {
   display: flex;
   justify-content: space-around;
   padding: 10px 30px 10px 0px;
-  background-color:#7e41b3 ;
+  background-color: #7e41b3;
 }
 
-.products{
+.products {
   display: flex;
   justify-content: space-between;
   padding: 15px 30px 10px 20px;
 }
 
-.right__content{
-width: 30%;
-display: flex;
-flex-direction: column;
-margin: 1px;
-outline: solid 0.1px #8b66ac ;
+.right__content {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin: 1px;
+  outline: solid 0.1px #8b66ac;
 }
 
 
-.detail{
- height: 10%;
-display: flex;
-outline: solid 0.1px #7e41b3 ;
+.detail {
+  height: 10%;
+  display: flex;
+  outline: solid 0.1px #7e41b3;
 }
 
-.text{
+.text {
   margin: auto;
 }
 
-.resume{
+.resume {
   display: flex;
   flex-direction: column;
   height: 50%;
-  padding:50px;
-  
+  padding: 50px;
+
 }
-.resume__container{
+
+.resume__container {
   display: flex;
   flex-direction: column;
-  outline: solid 0.1px #7e41b3 ;
+  outline: solid 0.1px #7e41b3;
 }
 
-.resume__detail{
+.resume__detail {
   display: flex;
-  outline: solid 0.1px #7e41b3 ;
+  outline: solid 0.1px #7e41b3;
 }
-.resume__detail--text1{
-  padding: 15px;
-  width: 50%;
-}
-.resume__detail--text2{
+
+.resume__detail--text1 {
   padding: 15px;
   width: 50%;
 }
 
-.resume__form{
+.resume__detail--text2 {
+  padding: 15px;
+  width: 50%;
+}
+
+.resume__form {
   display: flex;
   flex-direction: column;
   align-content: center;
   padding-top: 20px;
 }
 
-button{
+button {
   margin: 5px;
   padding: 5px;
-}
-
-footer {
-  background-image: url("/images/IMG-BACKGROUND.JPG");
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  height: 10vh;
-  min-height: 50px ;
-}
-
-.telefono,
-.mail,
-p,
-.logo {
-    display: flex;
-    transition: all 650ms;
 }
