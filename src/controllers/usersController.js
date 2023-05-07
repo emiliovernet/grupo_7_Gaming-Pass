@@ -80,7 +80,8 @@ const controller = {
 
         try {
             await db.User.create(nuevoUsuario);
-            res.redirect('/')
+            // res.redirect('/')
+            res.render('login', {nuevoUsuario})
         }
         catch (error) {
             res.send({ error })

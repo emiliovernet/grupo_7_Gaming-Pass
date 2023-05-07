@@ -30,7 +30,7 @@
         
             <form class="form" action="/users/login" method="POST">
                 <div class="form_seccion">
-                    <input class="form__input" type="email" name="email" id="txfEmail" placeholder="Email">
+                    <input class="form__input" type="email" name="email" id="txfEmail" placeholder="Email" value="<%= locals.nuevoUsuario? locals.nuevoUsuario.email : null %>">
                     
                 </div>
                 <div class="form_seccion">
