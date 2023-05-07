@@ -11,20 +11,22 @@
         </div>
 
         <div class="formulario">
-            <form action="/<%= product.id %>?_method=PUT" method="POST">
+            <form action="/<%= product.id %>?_method=PUT" method="POST" id="form">
                 <div>
-                    <label for="name">name de Producto:</label> <br>
+                    <label for="name">Nombre</label> <br>
                     <input value="<%= product.name %>" type="text" id="name" name="name">
-
+                    <p class="error-message" id="error-name"></p>
                 </div>
                 <div>
-                    <label for="price">Precio del producto:</label> <br>
+                    <label for="price">Precio</label> <br>
                     <input value="<%= product.price %>" type="text" id="price" name="price">
+                    <p class="error-message" id="error-price"></p>
                 </div>
 
                 <div>
-                    <label for="description">Descipción:</label>
+                    <label for="description">Descripción</label>
                     <textarea name="description" id="description"><%= product.description %></textarea>
+                    <p class="error-message" id="error-description"></p>
                 </div>
                 <div class="boton">
                     <button class="boton" type="submit">Guardar</button>
@@ -33,7 +35,7 @@
 
 
         </div>
-
+        <script src='/js/productEditFormValidator.js'></script>
     </body>
 
     </html>
