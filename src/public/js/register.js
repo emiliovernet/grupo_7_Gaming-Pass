@@ -54,16 +54,13 @@ window.onload = function () {
 
         const errors = [];
 
-        registerForm.name.addEventListener('keyup', function (event) {
-            if (!registerForm.name.value || event.key == '#' || event.key == '!' || event.key == '$') {
-                alert('¡Se recomienda no utilizar #hastags o simbolos!')
-                registerForm.name.classList.add('is-invalid');
+        if (!registerForm.name.value && (registerForm.name.value.indexOf('#') == -1 || registerForm.name.value.indexOf('$') == -1)) {
                 errors.push({ name: 'name', message: 'Este campo no puede estar vacio ni contener simbolos' });
-            } else {
+                registerForm.name.classList.add('is-invalid');
+        } else {
                 registerForm.name.classList.remove('is-invalid');
                 registerForm.name.classList.add('is-valid');
             }
-        })
 
         if (!registerForm.email.value || registerForm.email.value.indexOf('@') == -1 || registerForm.email.value.indexOf('.') == -1) {
             errors.push({ name: 'email', message: 'El campo Email no puede no contener "@" o estar vacio ' });

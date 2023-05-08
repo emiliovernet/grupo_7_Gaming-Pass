@@ -4,6 +4,17 @@ window.onload = function () {
     
     loginForm.email.focus();
 
+    //EMAIL//
+
+    loginForm.email.addEventListener('keydown', function (event) {
+        if (!loginForm.email.value || loginForm.email.value.indexOf('@') == -1 || loginForm.email.value.indexOf('.') == -1) {
+            loginForm.email.style.color = 'Red';
+        }
+        else {
+            loginForm.email.style.color = 'Green'
+        }
+    })
+
     loginForm.addEventListener('submit', (e) => {
         e.preventDefault();
         const allErrorLabels = document.querySelectorAll('.show-error-message');
@@ -14,7 +25,7 @@ window.onload = function () {
 
         const errors = [];
 
-        if (!loginForm.email.value) {
+        if (!loginForm.email.value && (loginForm.email.value.indexOf('@') == -1 || loginForm.email.value.indexOf('.') == -1)) {
             errors.push({ name: 'email', message: 'El campo Email no puede estar vacio' });
             loginForm.email.classList.add('is-invalid');
         } else {
