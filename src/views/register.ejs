@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/login.css" rel="stylesheet">
+    <link href="/css/register.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Pacifico&family=Roboto&family=Varela+Round&family=Yeseva+One&display=swap" rel="stylesheet">
     
     <title>Registrate</title>
@@ -31,9 +31,10 @@
                     </div>
                    </div> 
             
-                <form class="form"  method="POST" action="/users/register" enctype="multipart/form-data">
+                <form class="form" id="registerForm" method="POST" action="/users/register" enctype="multipart/form-data">
                     <div class="form_seccion">
                         <input class="form__input" type="text" name="name" id="txfname" placeholder="Nombre" value="<%= locals.oldData ? oldData.name : null %>">
+                        <p class ="error-messaje" id = "error-name"></p>
                         <% if (locals.errors && errors.name) { %>
                             <div class="error-msj">
                           <%= errors.name.msg %>
@@ -42,6 +43,7 @@
                     </div>
                     <div class="form_seccion">
                         <input class="form__input" type="email" name="email" id="txfEmail" placeholder="Email" value="<%= locals.oldData ? oldData.email : null %>">
+                        <p class ="error-messaje" id = "error-email"></p>
                         <% if (locals.errors && errors.email) { %>
                             <div class="error-msj">
                           <%= errors.email.msg %>
@@ -50,6 +52,7 @@
                     </div>
                     <div class="form_seccion">
                         <input class="form__input" type="password" name="password" id="txfPassword" placeholder="Contraseña">
+                        <p class ="error-messaje" id = "error-password"></p>
                         <% if (locals.errors && errors.password) { %>
                             <div class="error-msj">
                           <%= errors.password.msg %>
@@ -58,6 +61,7 @@
                     </div>
                     <div class="form_seccion">
                         <input class="form__input" type="file" name="avatar" id="avatar" value="<%= locals.oldData ? oldData.avatar : null %>">
+                        <p class ="error-messaje" id = "error-avatar"></p>
                         <% if (locals.errors && errors.avatar) { %>
                             <div class="error-msj">
                           <%= errors.avatar.msg %>
@@ -79,5 +83,7 @@
        
 
   </div>
+
+  <script src="/js/register.js"></script>
 </body>
 </html>

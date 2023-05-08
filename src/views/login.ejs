@@ -28,13 +28,14 @@
             </div>
            </div> 
         
-            <form class="form" action="/users/login" method="POST">
+            <form class="form" id = "loginForm" action="/users/login" method="POST">
                 <div class="form_seccion">
                     <input class="form__input" type="email" name="email" id="txfEmail" placeholder="Email" value="<%= locals.nuevoUsuario? locals.nuevoUsuario.email : null %>">
-                    
+                    <p class ="error-messaje" id = "error-email"></p>
                 </div>
                 <div class="form_seccion">
                     <input class="form__input" type="password" name="password" id="txfPassword" placeholder="Contraseña">
+                    <p class ="error-messaje" id = "error-password"></p>
                     <% if (locals.errors && errors.email) { %>
                         <div class="error-msj">
                       <%= errors.email.msg %> 
@@ -53,6 +54,6 @@
 
   </div>
     
-  <script src="/js/productFormValidation.js"></script>
+  <script src="/js/login.js"></script>
 </body>
 </html>
