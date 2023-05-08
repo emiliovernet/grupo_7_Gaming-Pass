@@ -9,8 +9,6 @@ const emailValidator = require('../Middlewares/emailValidator.js')
 
 
 
-
-
 router.get('/login', usersController.login);
 router.post('/login', usersController.procesarLogin);
 router.get('/register', usersController.register);

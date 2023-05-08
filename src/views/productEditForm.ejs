@@ -13,18 +13,23 @@
         <div class="formulario">
             <form action="/<%= product.id %>?_method=PUT" method="POST" id="form">
                 <div>
-                    <label for="name">Nombre</label> <br>
+                    <label for="name">Nombre del Producto:</label> <br>
                     <input value="<%= product.name %>" type="text" id="name" name="name">
                     <p class="error-message" id="error-name"></p>
                 </div>
                 <div>
-                    <label for="price">Precio</label> <br>
-                    <input value="<%= product.price %>" type="text" id="price" name="price">
+                    <label for="price">Precio del producto:</label> <br>
+                    <input value="<%= product.price %>" type="number" id="price" name="price">
                     <p class="error-message" id="error-price"></p>
+                </div>
+                <div>
+                    <label for="discount">Descuento:</label> <br>
+                    <input value="<%= product.discount %>" type="number" id="discount" name="discount">
+                    <p class="error-message" id="error-discount"></p>
                 </div>
 
                 <div>
-                    <label for="description">Descripción</label>
+                    <label for="description">Descripción</label> <br>
                     <textarea name="description" id="description"><%= product.description %></textarea>
                     <p class="error-message" id="error-description"></p>
                 </div>

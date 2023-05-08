@@ -73,10 +73,9 @@ const controller = {
     update: async (req, res) => {
         try {
             const newProduct = {
-                image: 'default-image.png',
                 ...req.body
             }
-            await db.Product.update(product,
+            await db.Product.update(newProduct,
                 {
                     where: {
                         id: req.params.id
