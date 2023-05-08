@@ -2,7 +2,7 @@ window.onload = function () {
 
     const loginForm = document.getElementById('loginForm');
     
-    loginForm.name.focus();
+    loginForm.email.focus();
 
     loginForm.addEventListener('submit', (e) => {
         e.preventDefault();
