@@ -40,9 +40,9 @@
     <h3 class="productTitle">Monitores</h3>
     <div class="products">
         <% products.forEach((product)=>{ %> 
-            <% if(product.category == "monitor") { %> 
+            <% if(product.product_categories_id == "2") { %> 
         <article>
-        <a href="/detail/<%= product.id %> "><img src="/images/<%= product.images[0].name%> " width="360px" alt="<%= product.description %> "></a>
+        <a href="/detail/<%= product.id %> "><img src="/images/<%= product.images[0]%> " width="360px" alt="<%= product.description %> "></a>
             <div class="main-article">
                 <i class="fas fa-truck truck-icon"></i>
                 <p class="price">$<%= product.price %> </p>
@@ -57,7 +57,7 @@
     <h3 class="productTitle">Memorias</h3>
     <div class="products">
         <% products.forEach((product)=>{ %> 
-            <% if(product.category == "memory") { %> 
+            <% if(product.product_categories_id == "3") { %> 
         <article>
         <a href="/detail/<%= product.id %> "><img src="/images/<%= product.images[0].name%> " width="360px" alt="<%= product.description %> "></a>
             <div class="main-article">

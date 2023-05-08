@@ -34,7 +34,7 @@ const controller = {
             const productCreated = await db.Product.create(newProduct);
             await db.Product_image.create({
                 products_id: productCreated.id,
-                name: req.file
+                name: req.file.filename
             })
             // ? req.file.filename :'default-image.png'
             res.redirect("/");

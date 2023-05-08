@@ -13,7 +13,7 @@
         </div>
 
         <div class="formulario">
-            <form action="/productForm" method="POST" id="form">
+            <form action="/productForm" method="POST" id="form" enctype="multipart/form-data">
                 <div>
                     <label for="name">Nombre del Producto:</label> <br>
                     <input type="text" name="name" id="name" value="<%= locals.oldData ? oldData.name : null %>">
@@ -38,6 +38,11 @@
                     <label for="discount">Descuento:</label> <br>
                     <input type="number" name="discount" id="discount" value="<%= locals.oldData ? oldData.discount : null %>">
                         <p class="error-message" id="error-discount"></p>
+                        <% if (locals.errors && errors.discount) { %>
+                            <div class="error-msj">
+                                <%= errors.discount.msg %>
+                            </div>
+                            <% } %>
                 </div>
                 <div>
                     <label for="category">Categoría:</label>

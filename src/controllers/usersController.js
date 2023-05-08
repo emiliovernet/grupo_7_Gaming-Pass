@@ -18,7 +18,6 @@ const controller = {
                 include:["role"]
 
             })
-            console.log(client);
             if (client) {
                 let contraseñaOk = bcryptjs.compareSync(req.body.password, client.password);
 
@@ -53,7 +52,7 @@ const controller = {
 
         }
         catch (error) {
-            res.send("no lo encontre!")
+            res.send({error})
         }
     },
 
