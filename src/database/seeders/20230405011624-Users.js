@@ -18,7 +18,15 @@ module.exports = {
         name: "Agustin",
         email: "agustin.granda@gmail.com",
         password: bcryptjs.hashSync("123456", 10),
-        avatar: "1679787879727_img.jpg"
+        avatar: "avdefault.jpg",
+        roles_id: "1"
+      },
+      {
+        name: "Virginia",
+        email: "virginia.schmied@gmail.com",
+        password: bcryptjs.hashSync("123456", 10),
+        avatar: "avdefault2.jpg",
+        roles_id: "2"
       }
     ], {});
   },
