@@ -11,9 +11,9 @@ const validationProducts = require('../Middlewares/validationProducts.js')
 // Productos
 router.get('/', productsController.home);
 router.get('/detail/:id/', productsController.productDetail);
-router.get('/:id/edit',userNotLogged, productsController.edit); // adminMiddleware,
-router.get('/productCart' , productsController.productCart);
-router.get('/create', productsController.productCreate);
+router.get('/:id/edit',userNotLogged,adminMiddleware, productsController.edit);
+router.get('/productCart', productsController.productCart);
+router.get('/create',adminMiddleware, productsController.productCreate);
 router.post('/productForm', multerProducts.single("image"),validationProducts, productsController.new);
 router.put('/:id', productsController.update); 
 router.delete('/:id',userNotLogged, productsController.destroy); 
