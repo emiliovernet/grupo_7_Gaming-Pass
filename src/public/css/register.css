@@ -43,7 +43,7 @@ transform: scale(1.05);
     flex-direction: column;
     background-color: #464646;
     width: 32%;
-    height: 125vh;
+    height: 110vh;
     margin: 0;
 }
 
@@ -58,13 +58,13 @@ transform: scale(1.05);
     max-width: 500px;
     max-height: 500px;
     margin:auto;
-    padding-top: 60px;
+    padding-top: 80px;
 }
 
 
 .form{
     justify-content: center;
-    margin-top: 5px;
+    margin-top: 20px;;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -80,7 +80,7 @@ transform: scale(1.05);
     color: #993618;
     font-size: 13px;
     font-family: 'arial', sans-serif;
-    text-align: left;
+    width: 100%;
 }
 
 .is-invalid {
@@ -94,15 +94,14 @@ transform: scale(1.05);
     border: 5px solid #3cdf93; 
   }
   .error-message {
-    color: #c44721;
-    font-size: 15px;
+    color: #c42121;
+    font-size: 12px;
     font-family: 'Roboto', sans-serif;
-    text-align: left;
-    margin:0px;
+    width: 100%;
   }
   .show-error-message {
-    display: block;
     color:#f12435;
+    width: 100%;
   }
 
 .form__input{
@@ -158,17 +157,6 @@ transform: scale(1.05);
 
 .olvide{
     text-align: left;
-}
-
-p{
-    width: 170px;
-    transition: all 650ms;
-}
-
-p:hover{
-    cursor:pointer;
-    text-decoration: underline;
-
 }
 
 
