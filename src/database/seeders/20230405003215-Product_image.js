@@ -16,7 +16,38 @@ module.exports = {
        {
          name: "IMG-NOTEBOOK1.JPG",
          products_id: "1"
-
+       },
+       {
+        name: "IMG-NOTEBOOK2.JPG",
+        products_id: "2"
+       },
+       {
+        name: "IMG-NOTEBOOK3.JPG",
+        products_id: "3"
+       },
+       {
+        name: "IMG-MONITOR1.JPG",
+        products_id: "4"
+       },
+       {
+        name: "IMG-MONITOR2.JPG",
+        products_id: "5"
+       },
+       {
+        name: "IMG-MONITOR3.JPG",
+        products_id: "6"
+       },
+       {
+        name: "IMG-MEMORIA1.JPG",
+        products_id: "7"
+       },
+       {
+        name: "IMG-MEMORIA2.JPG",
+        products_id: "8"
+       },
+       {
+        name: "IMG-MEMORIA3.JPG",
+        products_id: "9"
        }
       ], {});
   },
