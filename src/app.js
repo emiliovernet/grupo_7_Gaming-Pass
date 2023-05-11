@@ -37,8 +37,8 @@ app.use('/', productsRouter);
 app.use('/users', usersRouter);
 
 // Routes API
-app.use("/api/products", productsRoutesApi);
-app.use("/api/users", usersRoutesApi);
+app.use("/api/product", productsRoutesApi);
+app.use("/api/user", usersRoutesApi);
 // End Routes API
 
 const port = process.env.PORT || 3000;

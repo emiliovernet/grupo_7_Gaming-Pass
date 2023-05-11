@@ -28,7 +28,7 @@ const controller = {
                         role:client.role.name,
                         avatar: client.avatar
                     };
-
+                    console.log(req.session.userLogged)
                     return res.redirect('/');
                 }
 

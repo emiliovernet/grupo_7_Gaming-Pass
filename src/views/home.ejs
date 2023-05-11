@@ -1,112 +1,134 @@
-<%- include('partials/head')  %> 
+<%- include('partials/head') %>
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/headerFooter.css" />
     <title>Gaming Pass</title>
- </head>
+    </head>
 
-<body>
-    
-    <%- include('partials/header') %>
+    <body>
 
-    <section class="banner">
-        <img src="/images/IMG-BANNER1.JPG" alt="Banner de ofertas">
-    </section>
+        <%- include('partials/header') %>
 
-    <main>
+            <section class="banner">
+                <img src="/images/IMG-BANNER1.JPG" alt="Banner de ofertas">
+            </section>
 
-    <section class="Notebooks">
-        <h3 class="productTitle" >Notebooks</h3>
-        <div class="products">
-            
-            <% products.forEach((product)=>{ %> 
-                <% if(product.product_categories_id == "1") { %> 
-            <article>
-            <a href="/detail/<%= product.id %> "><img src="/images/<%= product.images[0].name%> " width="360px" alt="<%= product.description %> "></a>
-                <div class="main-article">
-                    <i class="fas fa-truck truck-icon"></i>
-                    <p class="price">$<%= product.price %> </p>
-                    <p class="discount"><%= product.discount %> % off</p>
-                    <h4 class="description"><%= product.description %> </h4>
-                </div>
-            </article>
-            <%}}) %> 
-</section>
+            <main>
 
-<section class="banner">
-    <img src="/images/IMG-BANNER2.JPG" alt="Banner de ofertas">
-</section>
+                <section class="Notebooks">
+                    <h3 class="productTitle">Notebooks</h3>
+                    <div class="products">
 
-<section class="Monitores">
-    <h3 class="productTitle">Monitores</h3>
-    <div class="products">
-        <% products.forEach((product)=>{ %> 
-            <% if(product.product_categories_id == "2") { %> 
-        <article>
-        <a href="/detail/<%= product.id %> "><img src="/images/<%= product.images[0].name%> " width="360px" alt="<%= product.description %> "></a>
-            <div class="main-article">
-                <i class="fas fa-truck truck-icon"></i>
-                <p class="price">$<%= product.price %> </p>
-                <p class="discount"><%= product.discount %> % off</p>
-                <h4 class="description"><%= product.description %> </h4>
-            </div>
-        </article>
-        <%}}) %> 
-</section>
+                        <% products.forEach((product)=>{ %>
+                            <% if(product.product_categories_id=="1" ) { %>
+                                <article>
+                                    <a href="/detail/<%= product.id %> "><img
+                                            src="/images/<%= product.images[0].name%> " width="360px"
+                                            alt="<%= product.description %> "></a>
+                                    <div class="main-article">
+                                        <i class="fas fa-truck truck-icon"></i>
+                                        <p class="price">$<%= product.price %>
+                                        </p>
+                                        <p class="discount">
+                                            <%= product.discount %> % off
+                                        </p>
+                                        <h4 class="description">
+                                            <%= product.description %>
+                                        </h4>
+                                    </div>
+                                </article>
+                                <%}}) %>
+                </section>
 
-<section class="memory">
-    <h3 class="productTitle">Memorias</h3>
-    <div class="products">
-        <% products.forEach((product)=>{ %> 
-            <% if(product.product_categories_id == "3") { %> 
-        <article>
-        <a href="/detail/<%= product.id %> "><img src="/images/<%= product.images[0].name%> " width="360px" alt="<%= product.description %> "></a>
-            <div class="main-article">
-                <i class="fas fa-truck truck-icon"></i>
-                <p class="price">$<%= product.price %> </p>
-                <p class="discount"><%= product.discount %> % off</p>
-                <h4 class="description"><%= product.description %> </h4>
-            </div>
-        </article>
-        <%}}) %> 
-</section>
+                <section class="banner">
+                    <img src="/images/IMG-BANNER2.JPG" alt="Banner de ofertas">
+                </section>
 
-<section class="banner">
-    <img src="/images/IMG-BANNER3.JPG" alt="Banner de ofertas">
-</section>
+                <section class="Monitores">
+                    <h3 class="productTitle">Monitores</h3>
+                    <div class="products">
+                        <% products.forEach((product)=>{ %>
+                            <% if(product.product_categories_id=="2" ) { %>
+                                <article>
+                                    <a href="/detail/<%= product.id %> "><img
+                                            src="/images/<%= product.images[0].name%> " width="360px"
+                                            alt="<%= product.description %> "></a>
+                                    <div class="main-article">
+                                        <i class="fas fa-truck truck-icon"></i>
+                                        <p class="price">$<%= product.price %>
+                                        </p>
+                                        <p class="discount">
+                                            <%= product.discount %> % off
+                                        </p>
+                                        <h4 class="description">
+                                            <%= product.description %>
+                                        </h4>
+                                    </div>
+                                </article>
+                                <%}}) %>
+                </section>
 
-<section class="beneficies">
+                <section class="banner">
+                    <img src="/images/IMG-BANNER3.JPG" alt="Banner de ofertas">
+                </section>
 
-        <div class="items">
-        <article>
-            <div class="item1">
-                <i class='fa fa-truck-moving'></i>
-                <h4 class="text">Envios a todo el pais/envios al exterior</h4>
-            </div>
-        </article>
-
-        <article>
-            <div class="item2">
-                <i class="fa fa-credit-card"></i>
-                <h4 class="text">Paga con todos los medios de pago</h4>
-            </div>
-        </article>
-
-        <article>
-            <div class="item3">
-                <i class="fa fa-money-bill-transfer"></i>
-                <h4 class="text">Garantia extendida y devoluciones</h4>
-            </div>
-        </article>
-
-        <article>
-            <div class="item4">
-                <i class="fa fa-sack-dollar"></i>
-                <h4 class="text">Ofertas y descuentos todas las semanas</h4>
-            </div>
-        </article>
-    </div>
-</section>
-</main>
+                <section class="memory">
+                    <h3 class="productTitle">Memorias</h3>
+                    <div class="products">
+                        <% products.forEach((product)=>{ %>
+                            <% if(product.product_categories_id=="3" ) { %>
+                                <article>
+                                    <a href="/detail/<%= product.id %> "><img
+                                            src="/images/<%= product.images[0].name%> " width="360px"
+                                            alt="<%= product.description %> "></a>
+                                    <div class="main-article">
+                                        <i class="fas fa-truck truck-icon"></i>
+                                        <p class="price">$<%= product.price %>
+                                        </p>
+                                        <p class="discount">
+                                            <%= product.discount %> % off
+                                        </p>
+                                        <h4 class="description">
+                                            <%= product.description %>
+                                        </h4>
+                                    </div>
+                                </article>
+                                <%}}) %>
+                </section>
 
 
-<%- include('partials/footer') %>
+                <section class="beneficies">
+
+                    <div class="items">
+                        <article>
+                            <div class="item1">
+                                <i class='fa fa-truck-moving'></i>
+                                <h4 class="text">Envios a todo el pais/envios al exterior</h4>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="item2">
+                                <i class="fa fa-credit-card"></i>
+                                <h4 class="text">Paga con todos los medios de pago</h4>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="item3">
+                                <i class="fa fa-money-bill-transfer"></i>
+                                <h4 class="text">Garantia extendida y devoluciones</h4>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="item4">
+                                <i class="fa fa-sack-dollar"></i>
+                                <h4 class="text">Ofertas y descuentos todas las semanas</h4>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </main>
+
+
+            <%- include('partials/footer') %>

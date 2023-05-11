@@ -1,59 +1,62 @@
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
+
 body {
-    font-family: "Roboto", sans-serif;
-    background-color: #ece8e8;
+  font-family: "Roboto", sans-serif;
+  background-color: #ece8e8;
 }
-  
-.estructura{
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    justify-content: space-around;
-    margin: auto; 
-    margin-top: 2%;
-    margin-bottom: 2%;
-    border: 1px solid #666 0.9 ;
-    border-radius: 12px;
-    max-width: 1150px;
-    min-width: 800px;
+
+.estructura {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border: 1px solid #666 0.9;
+  border-radius: 12px;
+  max-width: 1150px;
+  min-width: 800px;
 }
-.productMain{
+
+.productMain {
   display: flex;
   padding: 15px;
 }
-.options{
-  display: flex;
-}
-.image{
+
+.image {
   display: flex;
   justify-content: center;
   width: 60%;
 }
 
-.name{
+.name {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
   width: 40%;
   padding: 4px;
-  border: 1px solid #666 0,9;
+  border: 1px solid #666 0, 9;
   border-radius: 12px;
 }
-.productName{
+
+.productName {
   font-size: 35px;
 }
-.subName{
+
+.subName {
   font-size: 17px;
 }
 
-.buttons{
+.buttons {
   align-self: flex-end;
 }
-.comprar{
+
+.comprar {
   box-sizing: border-box;
   width: 95%;
   padding: 8px;
@@ -67,7 +70,8 @@ body {
   font-size: 18px;
 
 }
-.action-button{
+
+.action-button {
   box-sizing: border-box;
   width: 95%;
   padding: 5px;
@@ -80,52 +84,54 @@ body {
   border-radius: 7px;
   font-size: 10px;
 }
-button:hover{
+
+button:hover {
   cursor: pointer;
 }
 
-.pagos{
+.pagos {
   display: flex;
   flex-flow: column;
-  
+
 }
-.pago1{
+
+.pago1,
+.pago2 {
   display: flex;
   justify-content: space-around;
   margin: 40px;
-  
+
 }
-.pago2{
-  display: flex;
-  justify-content: space-around;
-  margin: 40px;
-}
-.text{
+
+.text {
   min-width: 336px;
 }
 
-.caracteristicas{
+.caracteristicas {
   display: flex;
   justify-content: space-around;
   margin: 40px;
 }
-.caracteristicasTitle{
+
+.caracteristicasTitle {
   padding-left: 45px;
 }
 
 main p {
-    color: rgb(95, 94, 94);
+  color: rgb(95, 94, 94);
 }
 
 .name i {
-    color: #A569BD;
-    font-weight: bold;
+  color: #A569BD;
+  font-weight: bold;
 }
-.hr1{
+
+.hr1 {
   width: 80%;
   margin: auto;
 }
-.hr2{
+
+.hr2 {
   width: 50%;
   margin: auto;
 }
@@ -141,10 +147,6 @@ main p {
     justify-content: center;
   }
   
-  footer {
-    display: flex;
-    flex-wrap: wrap;
-  }
 } */
 
 /* @media (min-width: 600px) {
@@ -155,4 +157,3 @@ main p {
     padding: 2%;
   }
 } */
-

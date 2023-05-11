@@ -18,11 +18,11 @@ window.onload = function () {
       form.name.classList.remove("is-invalid");
       form.name.classList.add("is-valid");
     }
-    form.name.addEventListener('change', function() {
-        if (form.name.classList.contains('is-valid')) {
-          errorMessage.classList.remove('show-error-message');
-        }
-      });
+    form.name.addEventListener('change', function () {
+      if (form.name.classList.contains('is-valid')) {
+        errorMessage.classList.remove('show-error-message');
+      }
+    });
 
     if (!form.price.value) {
       errors.push({

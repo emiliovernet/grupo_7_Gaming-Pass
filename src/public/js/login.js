@@ -1,7 +1,7 @@
 window.onload = function () {
 
     const loginForm = document.getElementById('loginForm');
-    
+
     loginForm.email.focus();
 
     //EMAIL//
