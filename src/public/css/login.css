@@ -77,7 +77,7 @@ body {
 }
 
 .error-msj {
-    color:red;
+    color:#c44721;
     font-size: 15px;
     font-family: 'arial', sans-serif;
     width: 100%;
@@ -85,11 +85,9 @@ body {
 }
 
 .is-invalid {
-    color:red;
-    font-size: 15px;
-    font-family: 'arial', sans-serif;
-    width: 100%;
-    text-align: left;
+    color: #c44721;
+    border: 5px solid #b91826;
+    border-radius: 4px;
 }
 
 .is-valid {

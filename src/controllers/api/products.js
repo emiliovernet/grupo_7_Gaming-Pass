@@ -7,9 +7,9 @@ const controller = {
             const products = await db.Product.findAll({
                 include: ["product_category"]
             });
-            const memorias = await db.Product.findAll({ where: { product_categories_id: 1, } });
-            const notebooks = await db.Product.findAll({ where: { product_categories_id: 2 } });
-            const monitores = await db.Product.findAll({ where: { product_categories_id: 3 } });
+            const notebooks = await db.Product.findAll({ where: { product_categories_id: 1 } });
+            const monitores = await db.Product.findAll({ where: { product_categories_id: 2 } });
+            const memorias = await db.Product.findAll({ where: { product_categories_id: 3 } });
 
             const productsData = products.map(product => {
                 return {
@@ -49,7 +49,7 @@ const controller = {
                 price: product.price,
                 discount: product.discount,
                 description: product.description,
-                image: "/images/" + product.images[0].name
+                image: "http://localhost:3000/images/" + product.images[0].name
             }
             res.send(response);
 

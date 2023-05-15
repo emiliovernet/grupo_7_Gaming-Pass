@@ -3,7 +3,7 @@ const express = require('express');
 const session = require("express-session")
 const methodOverride = require("method-override");
 const path = require('path');
-
+const cors = require('cors')
 
 const productsRouter = require('./routes/products');
 const usersRouter = require('./routes/users');
@@ -31,7 +31,7 @@ app.use(session({
     saveUninitialized: false
 }))
 app.use(userLoggedMiddleware);
-
+app.use(cors())
 
 app.use('/', productsRouter);
 app.use('/users', usersRouter);

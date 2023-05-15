@@ -77,14 +77,15 @@ transform: scale(1.05);
 }
 
 .error-msj {
-    color: #993618;
-    font-size: 13px;
+    color:#c44721;
+    font-size: 15px;
     font-family: 'arial', sans-serif;
     width: 100%;
+    text-align: left;
 }
 
 .is-invalid {
-    color: #c22532;
+    color: #c44721;
     border: 5px solid #b91826;
     border-radius: 4px;
 }
@@ -93,22 +94,21 @@ transform: scale(1.05);
     color: #3cdf93;
     border: 5px solid #3cdf93; 
   }
-  .error-message {
-    color: #c42121;
-    font-size: 12px;
-    font-family: 'Roboto', sans-serif;
-    width: 100%;
+  .error-message,.show-error-message {
+    color: #c44721;
+    font-size: 15px;
+    margin:6px;
+    font-family: 'arial', sans-serif;
+    height: 90%;
+    text-align: left;
   }
-  .show-error-message {
-    color:#f12435;
-    width: 100%;
-  }
+  
 
 .form__input{
     box-sizing: border-box;
     margin-top: 10px;
     width: 95%;
-    padding: 2%;
+    padding: 22px;
     border: 1px solid #b1afaf;
     border-radius: 6px;
 }
